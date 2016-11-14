@@ -19,7 +19,11 @@
     "security",
     "accessibility"
   ],
-  "author": "Gaël Poupard",
+  "author": {
+    "name": "Gaël Poupard",
+    "url": "http://www.ffoodd.fr",
+    "email": "gael@ffoodd.fr"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ffoodd/staats/issues"
