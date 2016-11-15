@@ -26,7 +26,10 @@
   },
   "homepage": "https://github.com/ffoodd/staats#readme",
   "dependencies": {
-    "a11y": "^0.4.1",
+    "psi": "latest",
     "gulp": "latest"
+  },
+  "devDependencies": {
+    "gulp-axe-webdriver": "^1.2.0"
   }
 }

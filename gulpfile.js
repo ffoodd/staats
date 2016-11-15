@@ -1,12 +1,25 @@
 'use strict';
 
 var gulp = require('gulp');
-var a11y = require('a11y');
+var psi  = require('psi');
+var axe = require('gulp-axe-webdriver');
 
-gulp.task('a11y', function() {
-  return a11y('https://aduggin.github.io/accessibility-fails/', function (err, reports) {
-      reports.audit.forEach(function (el) {
-        console.log(el);
-      });
-  });
+var site = 'http://www.ffoodd.fr';
+
+
+gulp.task('axe', function(done) {
+  var options = {
+      saveOutputIn: 'axe.json',
+      folderOutputReport: 'reports',
+      urls: [site]
+    };
+    return axe(options, done);
+});
+
+
+gulp.task('psi', function () {
+    return psi.output(site, {
+        nokey: 'true',
+        strategy: 'mobile'
+    });
 });
