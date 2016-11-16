@@ -27,6 +27,7 @@
   "homepage": "https://github.com/ffoodd/staats#readme",
   "dependencies": {
     "grunt": "^1.0.1",
+    "grunt-a11y": "^0.1.4",
     "grunt-pagespeed": "^2.0.1",
     "grunt-phantomas": "^0.13.0"
   }

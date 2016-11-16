@@ -38,11 +38,19 @@ module.exports = function(grunt) {
           output    : 'json'
         }
       }
+    },
+    a11y: {
+      dev: {
+        options: {
+          urls: [site]
+        }
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-pagespeed');
   grunt.loadNpmTasks('grunt-phantomas');
+  grunt.loadNpmTasks('grunt-a11y');
 
   grunt.registerTask('default', ['pagespeed']);
 
