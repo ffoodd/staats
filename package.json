@@ -6,6 +6,7 @@
     "type": "git",
     "url": "git+https://github.com/ffoodd/staats.git"
   },
+  "main": "index.js",
   "keywords": [
     "audit",
     "check-up",
@@ -26,6 +27,16 @@
   },
   "homepage": "https://github.com/ffoodd/staats#readme",
   "dependencies": {
-
+    "a11y": "^0.4.1",
+    "cssstats": "^3.0.0-beta.2",
+    "dom-stats": "^2.0.0",
+    "get-css": "^1.2.1",
+    "got": "^6.5.0",
+    "is-blank": "1.1.0",
+    "is-present": "1.0.0",
+    "normalize-url": "^1.6.1",
+    "pify": "^2.3.0",
+    "psi": "^2.0.4",
+    "tmi": "^1.0.3"
   }
 }
