@@ -1,16 +1,17 @@
 #! /usr/bin/env node
+'use strict'
 
 const meow = require('meow')
 const shtml = require('shtml')
 const isBlank = require('is-blank')
 const isPresent = require('is-present')
 const columnify = require('columnify')
-const scrutinize = require('./')
+const staats = require('./')
 
 const cli = meow(shtml`
   <div>
     <underline>Usage</underline>
-    $ scrutinized [url] [options...]<br><br>
+    $ staatsd [url] [options...]<br><br>
     <underline>Options</underline>
     -h, --help - Get help menu
     -v, --version - Get the version
@@ -19,8 +20,8 @@ const cli = meow(shtml`
     -c, --css - Only return cssstats
     -d, --dom - Only return dom stats<br><br>
     <underline>Examples</underline>
-    $ scrutinize johnotander.com
-    $ scrutinize johnotander.com --css<br><br>
+    $ staats johnotander.com
+    $ staats johnotander.com --css<br><br>
 `, {
   alias: {
     h: 'help',
@@ -33,7 +34,7 @@ const cli = meow(shtml`
 
 const url = cli.input[0]
 
-scrutinize(url).then(data => {
+staats(url).then(data => {
   let dataToShow = {}
 
   if (isPresent(cli.flags)) {
