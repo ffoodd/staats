@@ -13,7 +13,7 @@ const normalizeUrl = require('normalize-url')
 
 module.exports = (url, opts) => {
   if (isBlank(url) || typeof url !== 'string') {
-    throw new TypeError('staats expected a url as a string')
+    throw new TypeError('scrutinize expected a url as a string')
   }
 
   url = normalizeUrl(url)
