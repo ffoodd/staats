@@ -1,10 +1,11 @@
 'use strict';
 
-var gulp = require('gulp');
-var psi  = require('psi');
-var axe = require('gulp-axe-webdriver');
+const gulp  = require('gulp');
+const psi   = require('psi');
+const axe   = require('gulp-axe-webdriver');
+const louis = require('gulp-louis');
 
-var site = 'http://www.ffoodd.fr';
+let site = 'http://www.ffoodd.fr';
 
 
 gulp.task('axe', function(done) {
@@ -22,4 +23,13 @@ gulp.task('psi', function () {
         nokey: 'true',
         strategy: 'mobile'
     });
+});
+
+
+gulp.task('louis', function() {
+  louis({
+    url: site,
+    timeout: 60,
+    outputFileName: 'reports/louis.json'
+  });
 });
