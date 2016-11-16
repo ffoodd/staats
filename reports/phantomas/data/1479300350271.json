@@ -1,0 +1,2300 @@
+{
+  "assertions": {},
+  "metrics": {
+    "requests": {
+      "values": [
+        15,
+        15,
+        15,
+        15,
+        16,
+        null
+      ],
+      "sum": 76,
+      "min": 15,
+      "max": 16,
+      "median": 15,
+      "average": 15.2
+    },
+    "gzipRequests": {
+      "values": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        null
+      ],
+      "sum": 40,
+      "min": 8,
+      "max": 8,
+      "median": 8,
+      "average": 8
+    },
+    "postRequests": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "httpsRequests": {
+      "values": [
+        7,
+        7,
+        7,
+        7,
+        8,
+        null
+      ],
+      "sum": 36,
+      "min": 7,
+      "max": 8,
+      "median": 7,
+      "average": 7.2
+    },
+    "notFound": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "bodySize": {
+      "values": [
+        208139,
+        265705,
+        270586,
+        276595,
+        289943,
+        null
+      ],
+      "sum": 1310968,
+      "min": 208139,
+      "max": 289943,
+      "median": 270586,
+      "average": 262193.6
+    },
+    "contentLength": {
+      "values": [
+        296137,
+        296137,
+        298435,
+        300685,
+        300685,
+        null
+      ],
+      "sum": 1492079,
+      "min": 296137,
+      "max": 300685,
+      "median": 298435,
+      "average": 298415.8
+    },
+    "httpTrafficCompleted": {
+      "values": [
+        496,
+        523,
+        551,
+        985,
+        1486,
+        null
+      ],
+      "sum": 4041,
+      "min": 496,
+      "max": 1486,
+      "median": 551,
+      "average": 808.2
+    },
+    "timeToFirstByte": {
+      "values": [
+        30,
+        31,
+        31,
+        31,
+        172,
+        null
+      ],
+      "sum": 295,
+      "min": 30,
+      "max": 172,
+      "median": 31,
+      "average": 59
+    },
+    "timeToLastByte": {
+      "values": [
+        37,
+        37,
+        39,
+        40,
+        248,
+        null
+      ],
+      "sum": 401,
+      "min": 37,
+      "max": 248,
+      "median": 39,
+      "average": 80.2
+    },
+    "ajaxRequests": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "htmlCount": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "htmlSize": {
+      "values": [
+        4033,
+        4033,
+        4033,
+        4033,
+        6331,
+        null
+      ],
+      "sum": 22463,
+      "min": 4033,
+      "max": 6331,
+      "median": 4033,
+      "average": 4492.6
+    },
+    "cssCount": {
+      "values": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        null
+      ],
+      "sum": 10,
+      "min": 2,
+      "max": 2,
+      "median": 2,
+      "average": 2
+    },
+    "cssSize": {
+      "values": [
+        4758,
+        4758,
+        4758,
+        9306,
+        9306,
+        null
+      ],
+      "sum": 32886,
+      "min": 4758,
+      "max": 9306,
+      "median": 4758,
+      "average": 6577.2
+    },
+    "jsCount": {
+      "values": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        null
+      ],
+      "sum": 15,
+      "min": 3,
+      "max": 3,
+      "median": 3,
+      "average": 3
+    },
+    "jsSize": {
+      "values": [
+        20237,
+        20237,
+        20237,
+        20237,
+        20237,
+        null
+      ],
+      "sum": 101185,
+      "min": 20237,
+      "max": 20237,
+      "median": 20237,
+      "average": 20237
+    },
+    "jsonCount": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "jsonSize": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "imageCount": {
+      "values": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        null
+      ],
+      "sum": 20,
+      "min": 4,
+      "max": 4,
+      "median": 4,
+      "average": 4
+    },
+    "imageSize": {
+      "values": [
+        11133,
+        11133,
+        11133,
+        11133,
+        11133,
+        null
+      ],
+      "sum": 55665,
+      "min": 11133,
+      "max": 11133,
+      "median": 11133,
+      "average": 11133
+    },
+    "videoCount": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "videoSize": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "webfontCount": {
+      "values": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        null
+      ],
+      "sum": 25,
+      "min": 5,
+      "max": 5,
+      "median": 5,
+      "average": 5
+    },
+    "webfontSize": {
+      "values": [
+        255976,
+        255976,
+        255976,
+        255976,
+        255976,
+        null
+      ],
+      "sum": 1279880,
+      "min": 255976,
+      "max": 255976,
+      "median": 255976,
+      "average": 255976
+    },
+    "base64Count": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "base64Size": {
+      "values": [
+        113,
+        113,
+        113,
+        113,
+        113,
+        null
+      ],
+      "sum": 565,
+      "min": 113,
+      "max": 113,
+      "median": 113,
+      "average": 113
+    },
+    "otherCount": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        null
+      ],
+      "sum": 1,
+      "min": 0,
+      "max": 1,
+      "median": 0,
+      "average": 0.2
+    },
+    "otherSize": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "cacheHits": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "cacheMisses": {
+      "values": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        null
+      ],
+      "sum": 40,
+      "min": 8,
+      "max": 8,
+      "median": 8,
+      "average": 8
+    },
+    "cachePasses": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "cachingNotSpecified": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "cachingTooShort": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "cachingDisabled": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "oldCachingHeaders": {
+      "values": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        null
+      ],
+      "sum": 45,
+      "min": 9,
+      "max": 9,
+      "median": 9,
+      "average": 9
+    },
+    "consoleMessages": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "cookiesSent": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "cookiesRecv": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "domainsWithCookies": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "documentCookiesLength": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "documentCookiesCount": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "documentHeight": {
+      "values": [
+        1024,
+        1024,
+        1024,
+        1024,
+        1536,
+        null
+      ],
+      "sum": 5632,
+      "min": 1024,
+      "max": 1536,
+      "median": 1024,
+      "average": 1126.4
+    },
+    "commentsSize": {
+      "values": [
+        73,
+        73,
+        73,
+        73,
+        73,
+        null
+      ],
+      "sum": 365,
+      "min": 73,
+      "max": 73,
+      "median": 73,
+      "average": 73
+    },
+    "whiteSpacesSize": {
+      "values": [
+        952,
+        952,
+        952,
+        952,
+        952,
+        null
+      ],
+      "sum": 4760,
+      "min": 952,
+      "max": 952,
+      "median": 952,
+      "average": 952
+    },
+    "DOMelementsCount": {
+      "values": [
+        99,
+        99,
+        99,
+        99,
+        99,
+        null
+      ],
+      "sum": 495,
+      "min": 99,
+      "max": 99,
+      "median": 99,
+      "average": 99
+    },
+    "DOMelementMaxDepth": {
+      "values": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        null
+      ],
+      "sum": 40,
+      "min": 8,
+      "max": 8,
+      "median": 8,
+      "average": 8
+    },
+    "nodesWithInlineCSS": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "imagesScaledDown": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "imagesWithoutDimensions": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "DOMidDuplicated": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "hiddenContentSize": {
+      "values": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        null
+      ],
+      "sum": 20,
+      "min": 4,
+      "max": 4,
+      "median": 4,
+      "average": 4
+    },
+    "hiddenImages": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "DOMmutationsInserts": {
+      "values": [
+        20,
+        20,
+        20,
+        20,
+        20,
+        null
+      ],
+      "sum": 100,
+      "min": 20,
+      "max": 20,
+      "median": 20,
+      "average": 20
+    },
+    "DOMmutationsRemoves": {
+      "values": [
+        20,
+        20,
+        20,
+        20,
+        20,
+        null
+      ],
+      "sum": 100,
+      "min": 20,
+      "max": 20,
+      "median": 20,
+      "average": 20
+    },
+    "DOMmutationsAttributes": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "DOMqueries": {
+      "values": [
+        27,
+        27,
+        27,
+        27,
+        27,
+        null
+      ],
+      "sum": 135,
+      "min": 27,
+      "max": 27,
+      "median": 27,
+      "average": 27
+    },
+    "DOMqueriesWithoutResults": {
+      "values": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        null
+      ],
+      "sum": 10,
+      "min": 2,
+      "max": 2,
+      "median": 2,
+      "average": 2
+    },
+    "DOMqueriesById": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "DOMqueriesByClassName": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "DOMqueriesByTagName": {
+      "values": [
+        24,
+        24,
+        24,
+        24,
+        24,
+        null
+      ],
+      "sum": 120,
+      "min": 24,
+      "max": 24,
+      "median": 24,
+      "average": 24
+    },
+    "DOMqueriesByQuerySelectorAll": {
+      "values": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        null
+      ],
+      "sum": 15,
+      "min": 3,
+      "max": 3,
+      "median": 3,
+      "average": 3
+    },
+    "DOMinserts": {
+      "values": [
+        23,
+        23,
+        23,
+        23,
+        23,
+        null
+      ],
+      "sum": 115,
+      "min": 23,
+      "max": 23,
+      "median": 23,
+      "average": 23
+    },
+    "DOMqueriesDuplicated": {
+      "values": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        null
+      ],
+      "sum": 10,
+      "min": 2,
+      "max": 2,
+      "median": 2,
+      "average": 2
+    },
+    "DOMqueriesAvoidable": {
+      "values": [
+        21,
+        21,
+        21,
+        21,
+        21,
+        null
+      ],
+      "sum": 105,
+      "min": 21,
+      "max": 21,
+      "median": 21,
+      "average": 21
+    },
+    "domains": {
+      "values": [
+        3,
+        3,
+        3,
+        3,
+        4,
+        null
+      ],
+      "sum": 16,
+      "min": 3,
+      "max": 4,
+      "median": 3,
+      "average": 3.2
+    },
+    "maxRequestsPerDomain": {
+      "values": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        null
+      ],
+      "sum": 40,
+      "min": 8,
+      "max": 8,
+      "median": 8,
+      "average": 8
+    },
+    "medianRequestsPerDomain": {
+      "values": [
+        3.5,
+        6,
+        6,
+        6,
+        6,
+        null
+      ],
+      "sum": 27.5,
+      "min": 3.5,
+      "max": 6,
+      "median": 6,
+      "average": 5.5
+    },
+    "eventsBound": {
+      "values": [
+        15,
+        15,
+        15,
+        15,
+        15,
+        null
+      ],
+      "sum": 75,
+      "min": 15,
+      "max": 15,
+      "median": 15,
+      "average": 15
+    },
+    "eventsDispatched": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "eventsScrollBound": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "globalVariables": {
+      "values": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        null
+      ],
+      "sum": 15,
+      "min": 3,
+      "max": 3,
+      "median": 3,
+      "average": 3
+    },
+    "globalVariablesFalsy": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "headersCount": {
+      "values": [
+        268,
+        268,
+        268,
+        268,
+        281,
+        null
+      ],
+      "sum": 1353,
+      "min": 268,
+      "max": 281,
+      "median": 268,
+      "average": 270.6
+    },
+    "headersSentCount": {
+      "values": [
+        44,
+        44,
+        44,
+        44,
+        51,
+        null
+      ],
+      "sum": 227,
+      "min": 44,
+      "max": 51,
+      "median": 44,
+      "average": 45.4
+    },
+    "headersRecvCount": {
+      "values": [
+        224,
+        224,
+        224,
+        224,
+        230,
+        null
+      ],
+      "sum": 1126,
+      "min": 224,
+      "max": 230,
+      "median": 224,
+      "average": 225.2
+    },
+    "headersSize": {
+      "values": [
+        8768,
+        8768,
+        8768,
+        8768,
+        9189,
+        null
+      ],
+      "sum": 44261,
+      "min": 8768,
+      "max": 9189,
+      "median": 8768,
+      "average": 8852.2
+    },
+    "headersSentSize": {
+      "values": [
+        1618,
+        1618,
+        1618,
+        1618,
+        1862,
+        null
+      ],
+      "sum": 8334,
+      "min": 1618,
+      "max": 1862,
+      "median": 1618,
+      "average": 1666.8
+    },
+    "headersRecvSize": {
+      "values": [
+        7150,
+        7150,
+        7150,
+        7150,
+        7327,
+        null
+      ],
+      "sum": 35927,
+      "min": 7150,
+      "max": 7327,
+      "median": 7150,
+      "average": 7185.4
+    },
+    "headersBiggerThanContent": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        null
+      ],
+      "sum": 6,
+      "min": 1,
+      "max": 2,
+      "median": 1,
+      "average": 1.2
+    },
+    "jQueryVersionsLoaded": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "jQueryOnDOMReadyFunctions": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "jQueryWindowOnLoadFunctions": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "jQuerySizzleCalls": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "jQueryEventTriggers": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "jQueryDOMReads": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "jQueryDOMWrites": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "jQueryDOMWriteReadSwitches": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "documentWriteCalls": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "evalCalls": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "jsErrors": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "closedConnections": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "lazyLoadableImagesBelowTheFold": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "localStorageEntries": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "redirects": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "redirectsTime": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "repaints": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "firstPaint": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "requestsToFirstPaint": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "domainsToFirstPaint": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "requestsToDomContentLoaded": {
+      "values": [
+        6,
+        6,
+        6,
+        6,
+        9,
+        null
+      ],
+      "sum": 33,
+      "min": 6,
+      "max": 9,
+      "median": 6,
+      "average": 6.6
+    },
+    "domainsToDomContentLoaded": {
+      "values": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        null
+      ],
+      "sum": 10,
+      "min": 2,
+      "max": 2,
+      "median": 2,
+      "average": 2
+    },
+    "requestsToDomComplete": {
+      "values": [
+        15,
+        15,
+        15,
+        15,
+        15,
+        null
+      ],
+      "sum": 75,
+      "min": 15,
+      "max": 15,
+      "median": 15,
+      "average": 15
+    },
+    "domainsToDomComplete": {
+      "values": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        null
+      ],
+      "sum": 15,
+      "min": 3,
+      "max": 3,
+      "median": 3,
+      "average": 3
+    },
+    "assetsNotGzipped": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "assetsWithQueryString": {
+      "values": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        null
+      ],
+      "sum": 10,
+      "min": 2,
+      "max": 2,
+      "median": 2,
+      "average": 2
+    },
+    "assetsWithCookies": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "smallImages": {
+      "values": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        null
+      ],
+      "sum": 10,
+      "min": 2,
+      "max": 2,
+      "median": 2,
+      "average": 2
+    },
+    "smallCssFiles": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "smallJsFiles": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "multipleRequests": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "timeToFirstCss": {
+      "values": [
+        51,
+        52,
+        53,
+        57,
+        152,
+        null
+      ],
+      "sum": 365,
+      "min": 51,
+      "max": 152,
+      "median": 53,
+      "average": 73
+    },
+    "timeToFirstJs": {
+      "values": [
+        68,
+        68,
+        68,
+        83,
+        184,
+        null
+      ],
+      "sum": 471,
+      "min": 68,
+      "max": 184,
+      "median": 68,
+      "average": 94.2
+    },
+    "timeToFirstImage": {
+      "values": [
+        348,
+        390,
+        403,
+        413,
+        746,
+        null
+      ],
+      "sum": 2300,
+      "min": 348,
+      "max": 746,
+      "median": 403,
+      "average": 460
+    },
+    "domInteractive": {
+      "values": [
+        91,
+        96,
+        97,
+        114,
+        694,
+        null
+      ],
+      "sum": 1092,
+      "min": 91,
+      "max": 694,
+      "median": 97,
+      "average": 218.4
+    },
+    "domContentLoaded": {
+      "values": [
+        88,
+        95,
+        95,
+        112,
+        691,
+        null
+      ],
+      "sum": 1081,
+      "min": 88,
+      "max": 691,
+      "median": 95,
+      "average": 216.2
+    },
+    "domContentLoadedEnd": {
+      "values": [
+        304,
+        311,
+        313,
+        339,
+        955,
+        null
+      ],
+      "sum": 2222,
+      "min": 304,
+      "max": 955,
+      "median": 313,
+      "average": 444.4
+    },
+    "domComplete": {
+      "values": [
+        463,
+        486,
+        516,
+        580,
+        1356,
+        null
+      ],
+      "sum": 3401,
+      "min": 463,
+      "max": 1356,
+      "median": 516,
+      "average": 680.2
+    },
+    "timeBackend": {
+      "values": [
+        5,
+        6,
+        6,
+        6,
+        11,
+        null
+      ],
+      "sum": 34,
+      "min": 5,
+      "max": 11,
+      "median": 6,
+      "average": 6.8
+    },
+    "timeFrontend": {
+      "values": [
+        89,
+        94,
+        94,
+        94,
+        95,
+        null
+      ],
+      "sum": 466,
+      "min": 89,
+      "max": 95,
+      "median": 94,
+      "average": 93.2
+    },
+    "requestsWithTimeout": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "windowAlerts": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "windowConfirms": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "windowPrompts": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "bodyHTMLSize": {
+      "values": [
+        8376,
+        8376,
+        8376,
+        8376,
+        8376,
+        null
+      ],
+      "sum": 41880,
+      "min": 8376,
+      "max": 8376,
+      "median": 8376,
+      "average": 8376
+    },
+    "iframesCount": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "smallestResponse": {
+      "values": [
+        35,
+        35,
+        35,
+        35,
+        35,
+        null
+      ],
+      "sum": 175,
+      "min": 35,
+      "max": 35,
+      "median": 35,
+      "average": 35
+    },
+    "biggestResponse": {
+      "values": [
+        158572,
+        158572,
+        158572,
+        158572,
+        158572,
+        null
+      ],
+      "sum": 792860,
+      "min": 158572,
+      "max": 158572,
+      "median": 158572,
+      "average": 158572
+    },
+    "fastestResponse": {
+      "values": [
+        14,
+        14,
+        14,
+        17,
+        21,
+        null
+      ],
+      "sum": 80,
+      "min": 14,
+      "max": 21,
+      "median": 14,
+      "average": 16
+    },
+    "slowestResponse": {
+      "values": [
+        225,
+        249,
+        286,
+        290,
+        423,
+        null
+      ],
+      "sum": 1473,
+      "min": 225,
+      "max": 423,
+      "median": 286,
+      "average": 294.6
+    },
+    "smallestLatency": {
+      "values": [
+        13,
+        13,
+        13,
+        14,
+        15,
+        null
+      ],
+      "sum": 68,
+      "min": 13,
+      "max": 15,
+      "median": 13,
+      "average": 13.6
+    },
+    "biggestLatency": {
+      "values": [
+        224,
+        248,
+        284,
+        289,
+        422,
+        null
+      ],
+      "sum": 1467,
+      "min": 224,
+      "max": 422,
+      "median": 284,
+      "average": 293.4
+    },
+    "medianResponse": {
+      "values": [
+        67,
+        73,
+        79,
+        87,
+        229,
+        null
+      ],
+      "sum": 535,
+      "min": 67,
+      "max": 229,
+      "median": 79,
+      "average": 107
+    },
+    "medianLatency": {
+      "values": [
+        63,
+        72,
+        78,
+        85,
+        191,
+        null
+      ],
+      "sum": 489,
+      "min": 63,
+      "max": 191,
+      "median": 78,
+      "average": 97.8
+    }
+  },
+  "offenders": {
+    "gzipRequests": [
+      "http://www.ffoodd.fr/ (gzip: 3.94 kB / uncompressed: 3.94 kB)",
+      "http://www.ffoodd.fr/wp-content/themes/ffeeeedd--sass/style.min.css (gzip: 3.74 kB / uncompressed: 3.74 kB)",
+      "http://www.ffoodd.fr/wp-content/themes/ffeeeedd--sass/script.min.js (gzip: 9.70 kB / uncompressed: 9.70 kB)",
+      "http://www.ffoodd.fr/wp-includes/js/wp-embed.min.js?ver=4.6.1 (gzip: 1.37 kB / uncompressed: 1.37 kB)",
+      "http://www.ffoodd.fr/wp-content/themes/ffeeeedd--sass/impression.min.css (gzip: 0.91 kB / uncompressed: 0.91 kB)",
+      "https://use.typekit.net/kfl4dof.js (gzip: 8.69 kB / uncompressed: 8.69 kB)",
+      "http://www.ffoodd.fr/wp-content/themes/ffeeeedd--sass/img/comments.svgz (gzip: 0.69 kB / uncompressed: 0.69 kB)",
+      "http://www.ffoodd.fr/wp-content/themes/ffeeeedd--sass/img/ffeeeedd--sprite-2014.svgz (gzip: 6.25 kB / uncompressed: 6.25 kB)",
+      "http://www.ffoodd.fr/wp-content/themes/ffeeeedd--sass/style.min.css (gzip: 8.18 kB / uncompressed: 8.18 kB)",
+      "http://www.ffoodd.fr/ (gzip: 6.18 kB / uncompressed: 6.18 kB)"
+    ],
+    "httpsRequests": [
+      "https://use.typekit.net/kfl4dof.js",
+      "https://use.typekit.net/af/ae2c6e/00000000000000000001713b/27/d?primer=91bb0f3ff63f08e0231b70c26ae52273fd9ebe9e44615be7cb7255ccb832a97e&fvd=n4",
+      "https://use.typekit.net/af/c4d53f/0000000000000000000100fe/27/d?primer=91bb0f3ff63f08e0231b70c26ae52273fd9ebe9e44615be7cb7255ccb832a97e&fvd=n3",
+      "https://use.typekit.net/af/7be5bc/00000000000000000000ec08/27/d?primer=91bb0f3ff63f08e0231b70c26ae52273fd9ebe9e44615be7cb7255ccb832a97e&fvd=i5",
+      "https://use.typekit.net/af/9daf12/000000000000000000010141/27/d?primer=91bb0f3ff63f08e0231b70c26ae52273fd9ebe9e44615be7cb7255ccb832a97e&fvd=i3",
+      "https://use.typekit.net/af/13f056/000000000000000000012043/27/d?primer=91bb0f3ff63f08e0231b70c26ae52273fd9ebe9e44615be7cb7255ccb832a97e&fvd=n5",
+      "https://p.typekit.net/p.gif?s=1&k=kfl4dof&app=typekit&ht=tk&h=www.ffoodd.fr&f=384.2028.2029.2030.2031&a=410316&js=1.18.6&_=1479300352600",
+      "https://p.typekit.net/p.gif?s=1&k=kfl4dof&app=typekit&ht=tk&h=www.ffoodd.fr&f=384.2028.2029.2030.2031&a=410316&js=1.18.6&_=1479300354646",
+      "https://p.typekit.net/p.gif?s=1&k=kfl4dof&app=typekit&ht=tk&h=www.ffoodd.fr&f=384.2028.2029.2030.2031&a=410316&js=1.18.6&_=1479300356432",
+      "https://performance.typekit.net/",
+      "https://p.typekit.net/p.gif?s=1&k=kfl4dof&app=typekit&ht=tk&h=www.ffoodd.fr&f=384.2028.2029.2030.2031&a=410316&js=1.18.6&_=1479300358557",
+      "https://p.typekit.net/p.gif?s=1&k=kfl4dof&app=typekit&ht=tk&h=www.ffoodd.fr&f=384.2028.2029.2030.2031&a=410316&js=1.18.6&_=1479300360278"
+    ],
+    "htmlCount": [
+      "http://www.ffoodd.fr/ (3.94 kB)",
+      "http://www.ffoodd.fr/ (6.18 kB)"
+    ],
+    "cssCount": [
+      "http://www.ffoodd.fr/wp-content/themes/ffeeeedd--sass/style.min.css (3.74 kB)",
+      "http://www.ffoodd.fr/wp-content/themes/ffeeeedd--sass/impression.min.css (0.91 kB)",
+      "http://www.ffoodd.fr/wp-content/themes/ffeeeedd--sass/style.min.css (8.18 kB)"
+    ],
+    "jsCount": [
+      "http://www.ffoodd.fr/wp-content/themes/ffeeeedd--sass/script.min.js (9.70 kB)",
+      "http://www.ffoodd.fr/wp-includes/js/wp-embed.min.js?ver=4.6.1 (1.37 kB)",
+      "https://use.typekit.net/kfl4dof.js (8.69 kB)"
+    ],
+    "imageCount": [
+      "http://www.ffoodd.fr/wp-content/uploads/2013/10/copy-cropped-ffoodd.png (3.90 kB)",
+      "http://www.ffoodd.fr/wp-content/themes/ffeeeedd--sass/img/comments.svgz (0.69 kB)",
+      "http://www.ffoodd.fr/wp-content/themes/ffeeeedd--sass/img/ffeeeedd--sprite-2014.svgz (6.25 kB)",
+      "https://p.typekit.net/p.gif?s=1&k=kfl4dof&app=typekit&ht=tk&h=www.ffoodd.fr&f=384.2028.2029.2030.2031&a=410316&js=1.18.6&_=1479300352600 (0.03 kB)",
+      "https://p.typekit.net/p.gif?s=1&k=kfl4dof&app=typekit&ht=tk&h=www.ffoodd.fr&f=384.2028.2029.2030.2031&a=410316&js=1.18.6&_=1479300354646 (0.03 kB)",
+      "https://p.typekit.net/p.gif?s=1&k=kfl4dof&app=typekit&ht=tk&h=www.ffoodd.fr&f=384.2028.2029.2030.2031&a=410316&js=1.18.6&_=1479300356432 (0.03 kB)",
+      "https://p.typekit.net/p.gif?s=1&k=kfl4dof&app=typekit&ht=tk&h=www.ffoodd.fr&f=384.2028.2029.2030.2031&a=410316&js=1.18.6&_=1479300358557 (0.03 kB)",
+      "https://p.typekit.net/p.gif?s=1&k=kfl4dof&app=typekit&ht=tk&h=www.ffoodd.fr&f=384.2028.2029.2030.2031&a=410316&js=1.18.6&_=1479300360278 (0.03 kB)"
+    ],
+    "webfontCount": [
+      "https://use.typekit.net/af/ae2c6e/00000000000000000001713b/27/d?primer=91bb0f3ff63f08e0231b70c26ae52273fd9ebe9e44615be7cb7255ccb832a97e&fvd=n4 (154.86 kB)",
+      "https://use.typekit.net/af/c4d53f/0000000000000000000100fe/27/d?primer=91bb0f3ff63f08e0231b70c26ae52273fd9ebe9e44615be7cb7255ccb832a97e&fvd=n3 (20.68 kB)",
+      "https://use.typekit.net/af/7be5bc/00000000000000000000ec08/27/d?primer=91bb0f3ff63f08e0231b70c26ae52273fd9ebe9e44615be7cb7255ccb832a97e&fvd=i5 (21.74 kB)",
+      "https://use.typekit.net/af/9daf12/000000000000000000010141/27/d?primer=91bb0f3ff63f08e0231b70c26ae52273fd9ebe9e44615be7cb7255ccb832a97e&fvd=i3 (21.15 kB)",
+      "https://use.typekit.net/af/13f056/000000000000000000012043/27/d?primer=91bb0f3ff63f08e0231b70c26ae52273fd9ebe9e44615be7cb7255ccb832a97e&fvd=n5 (31.55 kB)"
+    ],
+    "cacheMisses": [
+      "http://www.ffoodd.fr/",
+      "http://www.ffoodd.fr/wp-content/themes/ffeeeedd--sass/style.min.css",
+      "http://www.ffoodd.fr/wp-content/themes/ffeeeedd--sass/script.min.js",
+      "http://www.ffoodd.fr/wp-includes/js/wp-embed.min.js?ver=4.6.1",
+      "http://www.ffoodd.fr/wp-content/themes/ffeeeedd--sass/impression.min.css",
+      "http://www.ffoodd.fr/wp-content/uploads/2013/10/copy-cropped-ffoodd.png",
+      "http://www.ffoodd.fr/wp-content/themes/ffeeeedd--sass/img/comments.svgz",
+      "http://www.ffoodd.fr/wp-content/themes/ffeeeedd--sass/img/ffeeeedd--sprite-2014.svgz"
+    ],
+    "cachingDisabled": [
+      "https://p.typekit.net/p.gif?s=1&k=kfl4dof&app=typekit&ht=tk&h=www.ffoodd.fr&f=384.2028.2029.2030.2031&a=410316&js=1.18.6&_=1479300352600",
+      "https://p.typekit.net/p.gif?s=1&k=kfl4dof&app=typekit&ht=tk&h=www.ffoodd.fr&f=384.2028.2029.2030.2031&a=410316&js=1.18.6&_=1479300354646",
+      "https://p.typekit.net/p.gif?s=1&k=kfl4dof&app=typekit&ht=tk&h=www.ffoodd.fr&f=384.2028.2029.2030.2031&a=410316&js=1.18.6&_=1479300356432",
+      "https://p.typekit.net/p.gif?s=1&k=kfl4dof&app=typekit&ht=tk&h=www.ffoodd.fr&f=384.2028.2029.2030.2031&a=410316&js=1.18.6&_=1479300358557",
+      "https://p.typekit.net/p.gif?s=1&k=kfl4dof&app=typekit&ht=tk&h=www.ffoodd.fr&f=384.2028.2029.2030.2031&a=410316&js=1.18.6&_=1479300360278"
+    ],
+    "oldCachingHeaders": [
+      "http://www.ffoodd.fr/ - Expires: Wed, 16 Nov 2016 13:36:28 GMT",
+      "http://www.ffoodd.fr/wp-content/themes/ffeeeedd--sass/style.min.css - Expires: Wed, 15 Nov 2017 14:43:54 GMT",
+      "http://www.ffoodd.fr/wp-content/themes/ffeeeedd--sass/script.min.js - Expires: Wed, 15 Nov 2017 16:00:55 GMT",
+      "http://www.ffoodd.fr/wp-includes/js/wp-embed.min.js?ver=4.6.1 - Expires: Wed, 15 Nov 2017 14:43:54 GMT",
+      "http://www.ffoodd.fr/wp-content/themes/ffeeeedd--sass/impression.min.css - Expires: Wed, 15 Nov 2017 14:43:54 GMT",
+      "http://www.ffoodd.fr/wp-content/uploads/2013/10/copy-cropped-ffoodd.png - Expires: Fri, 16 Dec 2016 12:36:29 GMT",
+      "http://www.ffoodd.fr/wp-content/themes/ffeeeedd--sass/img/comments.svgz - Expires: Thu, 15 Dec 2016 12:58:08 GMT",
+      "http://www.ffoodd.fr/wp-content/themes/ffeeeedd--sass/img/ffeeeedd--sprite-2014.svgz - Expires: Thu, 15 Dec 2016 14:43:55 GMT",
+      "https://p.typekit.net/p.gif?s=1&k=kfl4dof&app=typekit&ht=tk&h=www.ffoodd.fr&f=384.2028.2029.2030.2031&a=410316&js=1.18.6&_=1479300352600 - Expires: Thu, 25 Aug 2016 16:09:47 GMT",
+      "https://p.typekit.net/p.gif?s=1&k=kfl4dof&app=typekit&ht=tk&h=www.ffoodd.fr&f=384.2028.2029.2030.2031&a=410316&js=1.18.6&_=1479300354646 - Expires: Thu, 25 Aug 2016 16:09:47 GMT",
+      "https://p.typekit.net/p.gif?s=1&k=kfl4dof&app=typekit&ht=tk&h=www.ffoodd.fr&f=384.2028.2029.2030.2031&a=410316&js=1.18.6&_=1479300356432 - Expires: Thu, 25 Aug 2016 16:09:47 GMT",
+      "https://p.typekit.net/p.gif?s=1&k=kfl4dof&app=typekit&ht=tk&h=www.ffoodd.fr&f=384.2028.2029.2030.2031&a=410316&js=1.18.6&_=1479300358557 - Expires: Thu, 25 Aug 2016 16:09:47 GMT",
+      "https://p.typekit.net/p.gif?s=1&k=kfl4dof&app=typekit&ht=tk&h=www.ffoodd.fr&f=384.2028.2029.2030.2031&a=410316&js=1.18.6&_=1479300360278 - Expires: Thu, 25 Aug 2016 16:09:47 GMT"
+    ],
+    "DOMelementMaxDepth": [
+      "body > div.row > main#content > div.post-2057.post.type-post.status-publish.format-standard.hentry.category-journal.tag-accessibilite.tag-astuces.tag-compatibilite.tag-conscience-professionnelle.tag-css.tag-css3.tag-integration.tag-optimisation > article[0] > footer.small.mt1 > p.pl2 > strong.vcard.author > span.fn"
+    ],
+    "DOMmutationsInserts": [
+      "\"span[6]\" added to \"body\"",
+      "\"span[7]\" added to \"body\"",
+      "\"span[8]\" added to \"body\"",
+      "\"span[9]\" added to \"body\"",
+      "\"span[10]\" added to \"body\"",
+      "\"span[11]\" added to \"body\"",
+      "\"span[12]\" added to \"body\"",
+      "\"span[13]\" added to \"body\"",
+      "\"span[14]\" added to \"body\"",
+      "\"span[15]\" added to \"body\"",
+      "\"span[16]\" added to \"body\"",
+      "\"span[17]\" added to \"body\"",
+      "\"span[18]\" added to \"body\"",
+      "\"span[19]\" added to \"body\"",
+      "\"span[20]\" added to \"body\"",
+      "\"span[21]\" added to \"body\"",
+      "\"span[22]\" added to \"body\"",
+      "\"span[23]\" added to \"body\"",
+      "\"span[24]\" added to \"body\"",
+      "\"span[25]\" added to \"body\""
+    ],
+    "DOMmutationsRemoves": [
+      "\"span\" removed from \"body\""
+    ],
+    "DOMqueriesWithoutResults": [
+      "code[class*=\"language-\"], [class*=\"language-\"] code, code[class*=\"lang-\"], [class*=\"lang-\"] code (in #document) using querySelectorAll",
+      "iframe.wp-embedded-content (in #document) using querySelectorAll"
+    ],
+    "DOMqueriesByTagName": [
+      "head (in #document)",
+      "script (in #document)",
+      "body (in #document)"
+    ],
+    "DOMqueriesByQuerySelectorAll": [
+      ".skip (in #document)",
+      "code[class*=\"language-\"], [class*=\"language-\"] code, code[class*=\"lang-\"], [class*=\"lang-\"] code (in #document)",
+      "iframe.wp-embedded-content (in #document)"
+    ],
+    "DOMinserts": [
+      "\"head > style[26]\" appended to \"head\"",
+      "\"head > style[27]\" appended to \"head\"",
+      "\"body > span[6]\" appended to \"body\"",
+      "\"body > span[7]\" appended to \"body\"",
+      "\"body > span[8]\" appended to \"body\"",
+      "\"body > span[9]\" appended to \"body\"",
+      "\"body > span[10]\" appended to \"body\"",
+      "\"body > span[11]\" appended to \"body\"",
+      "\"body > span[12]\" appended to \"body\"",
+      "\"body > span[13]\" appended to \"body\"",
+      "\"body > span[14]\" appended to \"body\"",
+      "\"body > span[15]\" appended to \"body\"",
+      "\"body > span[16]\" appended to \"body\"",
+      "\"body > span[17]\" appended to \"body\"",
+      "\"body > span[18]\" appended to \"body\"",
+      "\"body > span[19]\" appended to \"body\"",
+      "\"body > span[20]\" appended to \"body\"",
+      "\"body > span[21]\" appended to \"body\"",
+      "\"body > span[22]\" appended to \"body\"",
+      "\"body > span[23]\" appended to \"body\"",
+      "\"body > span[24]\" appended to \"body\"",
+      "\"body > span[25]\" appended to \"body\"",
+      "\"head > style[29]\" appended to \"head\""
+    ],
+    "DOMqueriesDuplicated": [
+      "tag name \"body\" (in #document): 20 queries",
+      "tag name \"head\" (in #document): 3 queries"
+    ],
+    "domains": [
+      "www.ffoodd.fr: 8 request(s)",
+      "use.typekit.net: 6 request(s)",
+      "p.typekit.net: 1 request(s)",
+      "performance.typekit.net: 1 request(s)"
+    ],
+    "eventsBound": [
+      "\"DOMContentLoaded\" bound to \"#document\"",
+      "\"focus\" bound to \"body > a#top\"",
+      "\"focus\" bound to \"body > a.skip.scroll.pa1.inbl.smaller.print-hidden\"",
+      "\"focus\" bound to \"body > footer.mw--site.mod.txtcenter.center > ul.ffeeeedd--contact.ul-reset.p-reset.mt0.print-hidden > li.inbl.pa1 > a.skip.inbl.ir.ffeeeedd--sprite.ffeeeedd--sprite__twitter\"",
+      "\"focus\" bound to \"body > footer.mw--site.mod.txtcenter.center > ul.ffeeeedd--contact.ul-reset.p-reset.mt0.print-hidden > li.inbl.pa1 > a.skip.inbl.ir.ffeeeedd--sprite.ffeeeedd--sprite__github\"",
+      "\"focus\" bound to \"body > footer.mw--site.mod.txtcenter.center > ul.ffeeeedd--contact.ul-reset.p-reset.mt0.print-hidden > li.inbl.pa1 > a.skip.inbl.ir.ffeeeedd--sprite.ffeeeedd--sprite__dribble\"",
+      "\"focus\" bound to \"body > footer.mw--site.mod.txtcenter.center > ul.ffeeeedd--contact.ul-reset.p-reset.mt0.print-hidden > li.inbl.pa1 > a.skip.inbl.ir.ffeeeedd--sprite.ffeeeedd--sprite__linkedin\"",
+      "\"focus\" bound to \"body > footer.mw--site.mod.txtcenter.center > ul.ffeeeedd--contact.ul-reset.p-reset.mt0.print-hidden > li.inbl.pa1 > a.skip.inbl.ir.ffeeeedd--sprite.ffeeeedd--sprite__google\"",
+      "\"focus\" bound to \"body > footer.mw--site.mod.txtcenter.center > ul.ffeeeedd--contact.ul-reset.p-reset.mt0.print-hidden > li.inbl.pa1 > a.skip.inbl.ir.ffeeeedd--sprite.ffeeeedd--sprite__behance\"",
+      "\"focus\" bound to \"body > footer.mw--site.mod.txtcenter.center > ul.ffeeeedd--contact.ul-reset.p-reset.mt0.print-hidden > li.inbl.pa1 > a.skip.inbl.ir.ffeeeedd--sprite.ffeeeedd--sprite__rss\"",
+      "\"focus\" bound to \"body > footer.mw--site.mod.txtcenter.center > ul.ffeeeedd--contact.ul-reset.p-reset.mt0.print-hidden > li.inbl.pa1 > a.skip.inbl.ir.ffeeeedd--sprite.ffeeeedd--sprite__mail\"",
+      "\"message\" bound to \"window\"",
+      "\"load\" bound to \"window\""
+    ],
+    "globalVariables": [
+      "Typekit",
+      "Prism",
+      "wp"
+    ],
+    "headersBiggerThanContent": [
+      "https://p.typekit.net/p.gif?s=1&k=kfl4dof&app=typekit&ht=tk&h=www.ffoodd.fr&f=384.2028.2029.2030.2031&a=410316&js=1.18.6&_=1479300352600 (body: 0.03 kB / headers: 0.31 kB)",
+      "https://p.typekit.net/p.gif?s=1&k=kfl4dof&app=typekit&ht=tk&h=www.ffoodd.fr&f=384.2028.2029.2030.2031&a=410316&js=1.18.6&_=1479300354646 (body: 0.03 kB / headers: 0.31 kB)",
+      "https://p.typekit.net/p.gif?s=1&k=kfl4dof&app=typekit&ht=tk&h=www.ffoodd.fr&f=384.2028.2029.2030.2031&a=410316&js=1.18.6&_=1479300356432 (body: 0.03 kB / headers: 0.31 kB)",
+      "https://performance.typekit.net/ (body: 0.00 kB / headers: 0.17 kB)",
+      "https://p.typekit.net/p.gif?s=1&k=kfl4dof&app=typekit&ht=tk&h=www.ffoodd.fr&f=384.2028.2029.2030.2031&a=410316&js=1.18.6&_=1479300358557 (body: 0.03 kB / headers: 0.31 kB)",
+      "https://p.typekit.net/p.gif?s=1&k=kfl4dof&app=typekit&ht=tk&h=www.ffoodd.fr&f=384.2028.2029.2030.2031&a=410316&js=1.18.6&_=1479300360278 (body: 0.03 kB / headers: 0.31 kB)"
+    ],
+    "domainsToDomContentLoaded": [
+      "www.ffoodd.fr (8 requests)",
+      "use.typekit.net (1 requests)",
+      "www.ffoodd.fr (5 requests)"
+    ],
+    "domainsToDomComplete": [
+      "www.ffoodd.fr (8 requests)",
+      "use.typekit.net (6 requests)",
+      "p.typekit.net (1 requests)"
+    ],
+    "assetsWithQueryString": [
+      "http://www.ffoodd.fr/wp-includes/js/wp-embed.min.js?ver=4.6.1 (JS)",
+      "https://p.typekit.net/p.gif?s=1&k=kfl4dof&app=typekit&ht=tk&h=www.ffoodd.fr&f=384.2028.2029.2030.2031&a=410316&js=1.18.6&_=1479300352600 (IMAGE)",
+      "https://p.typekit.net/p.gif?s=1&k=kfl4dof&app=typekit&ht=tk&h=www.ffoodd.fr&f=384.2028.2029.2030.2031&a=410316&js=1.18.6&_=1479300354646 (IMAGE)",
+      "https://p.typekit.net/p.gif?s=1&k=kfl4dof&app=typekit&ht=tk&h=www.ffoodd.fr&f=384.2028.2029.2030.2031&a=410316&js=1.18.6&_=1479300356432 (IMAGE)",
+      "https://p.typekit.net/p.gif?s=1&k=kfl4dof&app=typekit&ht=tk&h=www.ffoodd.fr&f=384.2028.2029.2030.2031&a=410316&js=1.18.6&_=1479300358557 (IMAGE)",
+      "https://p.typekit.net/p.gif?s=1&k=kfl4dof&app=typekit&ht=tk&h=www.ffoodd.fr&f=384.2028.2029.2030.2031&a=410316&js=1.18.6&_=1479300360278 (IMAGE)"
+    ],
+    "smallImages": [
+      "http://www.ffoodd.fr/wp-content/themes/ffeeeedd--sass/img/comments.svgz (0.69 kB)",
+      "https://p.typekit.net/p.gif?s=1&k=kfl4dof&app=typekit&ht=tk&h=www.ffoodd.fr&f=384.2028.2029.2030.2031&a=410316&js=1.18.6&_=1479300352600 (0.03 kB)",
+      "https://p.typekit.net/p.gif?s=1&k=kfl4dof&app=typekit&ht=tk&h=www.ffoodd.fr&f=384.2028.2029.2030.2031&a=410316&js=1.18.6&_=1479300354646 (0.03 kB)",
+      "https://p.typekit.net/p.gif?s=1&k=kfl4dof&app=typekit&ht=tk&h=www.ffoodd.fr&f=384.2028.2029.2030.2031&a=410316&js=1.18.6&_=1479300356432 (0.03 kB)",
+      "https://p.typekit.net/p.gif?s=1&k=kfl4dof&app=typekit&ht=tk&h=www.ffoodd.fr&f=384.2028.2029.2030.2031&a=410316&js=1.18.6&_=1479300358557 (0.03 kB)",
+      "https://p.typekit.net/p.gif?s=1&k=kfl4dof&app=typekit&ht=tk&h=www.ffoodd.fr&f=384.2028.2029.2030.2031&a=410316&js=1.18.6&_=1479300360278 (0.03 kB)"
+    ],
+    "smallCssFiles": [
+      "http://www.ffoodd.fr/wp-content/themes/ffeeeedd--sass/impression.min.css (0.91 kB)"
+    ],
+    "smallJsFiles": [
+      "http://www.ffoodd.fr/wp-includes/js/wp-embed.min.js?ver=4.6.1 (1.37 kB)"
+    ],
+    "timeToFirstCss": [
+      "http://www.ffoodd.fr/wp-content/themes/ffeeeedd--sass/style.min.css received in 152 ms",
+      "http://www.ffoodd.fr/wp-content/themes/ffeeeedd--sass/style.min.css received in 52 ms",
+      "http://www.ffoodd.fr/wp-content/themes/ffeeeedd--sass/style.min.css received in 53 ms",
+      "http://www.ffoodd.fr/wp-content/themes/ffeeeedd--sass/style.min.css received in 51 ms",
+      "http://www.ffoodd.fr/wp-content/themes/ffeeeedd--sass/style.min.css received in 57 ms"
+    ],
+    "timeToFirstJs": [
+      "http://www.ffoodd.fr/wp-content/themes/ffeeeedd--sass/script.min.js received in 184 ms",
+      "http://www.ffoodd.fr/wp-includes/js/wp-embed.min.js?ver=4.6.1 received in 68 ms",
+      "http://www.ffoodd.fr/wp-content/themes/ffeeeedd--sass/script.min.js received in 68 ms",
+      "http://www.ffoodd.fr/wp-content/themes/ffeeeedd--sass/script.min.js received in 83 ms"
+    ],
+    "timeToFirstImage": [
+      "http://www.ffoodd.fr/wp-content/uploads/2013/10/copy-cropped-ffoodd.png received in 746 ms",
+      "http://www.ffoodd.fr/wp-content/uploads/2013/10/copy-cropped-ffoodd.png received in 403 ms",
+      "http://www.ffoodd.fr/wp-content/uploads/2013/10/copy-cropped-ffoodd.png received in 413 ms",
+      "http://www.ffoodd.fr/wp-content/uploads/2013/10/copy-cropped-ffoodd.png received in 348 ms",
+      "http://www.ffoodd.fr/wp-content/uploads/2013/10/copy-cropped-ffoodd.png received in 390 ms"
+    ],
+    "smallestResponse": [
+      "https://p.typekit.net/p.gif?s=1&k=kfl4dof&app=typekit&ht=tk&h=www.ffoodd.fr&f=384.2028.2029.2030.2031&a=410316&js=1.18.6&_=1479300352600 (0.03 kB)",
+      "https://p.typekit.net/p.gif?s=1&k=kfl4dof&app=typekit&ht=tk&h=www.ffoodd.fr&f=384.2028.2029.2030.2031&a=410316&js=1.18.6&_=1479300354646 (0.03 kB)",
+      "https://p.typekit.net/p.gif?s=1&k=kfl4dof&app=typekit&ht=tk&h=www.ffoodd.fr&f=384.2028.2029.2030.2031&a=410316&js=1.18.6&_=1479300356432 (0.03 kB)",
+      "https://p.typekit.net/p.gif?s=1&k=kfl4dof&app=typekit&ht=tk&h=www.ffoodd.fr&f=384.2028.2029.2030.2031&a=410316&js=1.18.6&_=1479300358557 (0.03 kB)",
+      "https://p.typekit.net/p.gif?s=1&k=kfl4dof&app=typekit&ht=tk&h=www.ffoodd.fr&f=384.2028.2029.2030.2031&a=410316&js=1.18.6&_=1479300360278 (0.03 kB)"
+    ],
+    "biggestResponse": [
+      "https://use.typekit.net/af/ae2c6e/00000000000000000001713b/27/d?primer=91bb0f3ff63f08e0231b70c26ae52273fd9ebe9e44615be7cb7255ccb832a97e&fvd=n4 (154.86 kB)"
+    ],
+    "fastestResponse": [
+      "http://www.ffoodd.fr/wp-content/themes/ffeeeedd--sass/impression.min.css (21 ms)",
+      "http://www.ffoodd.fr/wp-content/themes/ffeeeedd--sass/impression.min.css (14 ms)",
+      "http://www.ffoodd.fr/wp-content/themes/ffeeeedd--sass/impression.min.css (17 ms)"
+    ],
+    "slowestResponse": [
+      "http://www.ffoodd.fr/wp-content/themes/ffeeeedd--sass/img/ffeeeedd--sprite-2014.svgz (423 ms)",
+      "http://www.ffoodd.fr/wp-content/uploads/2013/10/copy-cropped-ffoodd.png (286 ms)",
+      "http://www.ffoodd.fr/wp-content/uploads/2013/10/copy-cropped-ffoodd.png (290 ms)",
+      "http://www.ffoodd.fr/wp-content/uploads/2013/10/copy-cropped-ffoodd.png (225 ms)",
+      "http://www.ffoodd.fr/wp-content/uploads/2013/10/copy-cropped-ffoodd.png (249 ms)"
+    ],
+    "smallestLatency": [
+      "http://www.ffoodd.fr/wp-content/themes/ffeeeedd--sass/style.min.css (15 ms)",
+      "http://www.ffoodd.fr/wp-content/themes/ffeeeedd--sass/impression.min.css (13 ms)",
+      "http://www.ffoodd.fr/wp-content/themes/ffeeeedd--sass/style.min.css (14 ms)"
+    ],
+    "biggestLatency": [
+      "http://www.ffoodd.fr/wp-content/themes/ffeeeedd--sass/img/ffeeeedd--sprite-2014.svgz (422 ms)",
+      "http://www.ffoodd.fr/wp-content/uploads/2013/10/copy-cropped-ffoodd.png (284 ms)",
+      "http://www.ffoodd.fr/wp-content/uploads/2013/10/copy-cropped-ffoodd.png (289 ms)",
+      "http://www.ffoodd.fr/wp-content/uploads/2013/10/copy-cropped-ffoodd.png (224 ms)",
+      "http://www.ffoodd.fr/wp-content/uploads/2013/10/copy-cropped-ffoodd.png (248 ms)"
+    ],
+    "otherCount": [
+      "https://performance.typekit.net/ (0.00 kB)"
+    ]
+  }
+}

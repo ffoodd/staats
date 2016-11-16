@@ -25,10 +25,24 @@ module.exports = function(grunt) {
           threshold: 80
         }
       }
+    },
+    phantomas: {
+      gruntSite : {
+        options : {
+          indexPath : './reports/phantomas/',
+          options   : {
+            'timeout' : 30
+          },
+          url       : site,
+          buildUi   : false,
+          output    : 'json'
+        }
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-pagespeed');
+  grunt.loadNpmTasks('grunt-phantomas');
 
   grunt.registerTask('default', ['pagespeed']);
 
