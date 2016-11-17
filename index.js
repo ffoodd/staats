@@ -4,6 +4,7 @@ const isBlank = require('is-blank')
 const nUrl    = require('normalize-url')
 const psi     = require('psi')
 const a11y    = require('a11y')
+const html    = require('html-validator')
 
 module.exports = (url) => {
   if (isBlank(url) || typeof url !== 'string') {
@@ -27,7 +28,7 @@ module.exports = (url) => {
       process.exit(err.code || 1);
     }
 
-    console.log('a11y');
+    console.log('Accessibility');
     console.log('-------------------');
 
     reports.audit.forEach(function (el) {
@@ -37,6 +38,20 @@ module.exports = (url) => {
       }
     });
 
+    console.log('-------------------');
+  });
+
+
+  html({url: url, format: 'text'}, function (err, data) {
+    if (err) {
+      console.error(err.message);
+    }
+
+    console.log('HTML validation');
+    console.log('-------------------');
+
+    console.log(data);
+    
     console.log('-------------------');
   });
 }
