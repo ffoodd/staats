@@ -5,6 +5,7 @@ const nUrl    = require('normalize-url')
 const psi     = require('psi')
 const a11y    = require('a11y')
 const html    = require('html-validator')
+const styles  = require('stylestats')
 
 module.exports = (url) => {
   if (isBlank(url) || typeof url !== 'string') {
@@ -14,11 +15,12 @@ module.exports = (url) => {
   url = nUrl(url);
 
   psi(url, {nokey: 'true', strategy: 'mobile'}).then(data => {
+    console.log('-------------------');
     console.log('Page Speed Insights');
     console.log('-------------------');
+
     console.log('Speed score: ' + data.ruleGroups.SPEED.score);
     console.log('Usability score: ' + data.ruleGroups.USABILITY.score);
-    console.log('-------------------');
   });
 
 
@@ -28,6 +30,7 @@ module.exports = (url) => {
       process.exit(err.code || 1);
     }
 
+    console.log('-------------------');
     console.log('Accessibility');
     console.log('-------------------');
 
@@ -37,8 +40,6 @@ module.exports = (url) => {
         console.log(el.elements);
       }
     });
-
-    console.log('-------------------');
   });
 
 
@@ -47,11 +48,31 @@ module.exports = (url) => {
       console.error(err.message);
     }
 
+    console.log('-------------------');
     console.log('HTML validation');
     console.log('-------------------');
 
     console.log(data);
-    
+  });
+
+
+  let css = new styles(url, {
+    "ratioOfDataUriSize": false,
+    "gzippedSize": false,
+    "uniqueFontSizes": false,
+    "uniqueFontFamilies": false,
+    "uniqueColors": false,
+    "uniqueBackgroundImages": false
+  });
+  css.parse(function (err, result) {
+    if (err) {
+      console.error(err.message);
+    }
+
     console.log('-------------------');
+    console.log('StyleStats');
+    console.log('-------------------');
+
+    console.log(result);
   });
 }
