@@ -21,4 +21,4 @@ const cli = meow(shtml`
 
 const url = cli.input[0]
 
-console.log(staats(url));
+return staats(url);
