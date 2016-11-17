@@ -8,10 +8,11 @@
   },
   "main": "index.js",
   "files": [
-    "index.js"
+    "index.js",
+    "cli.js"
   ],
   "bin": {
-    "staats": "index.js"
+    "staats": "cli.js"
   },
   "keywords": [
     "audit",
@@ -32,5 +33,10 @@
     "url": "https://github.com/ffoodd/staats/issues"
   },
   "homepage": "https://github.com/ffoodd/staats#readme",
-  "dependencies": {}
+  "dependencies": {
+    "is-blank": "^1.1.0",
+    "meow": "^3.7.0",
+    "normalize-url": "^1.8.0",
+    "shtml": "^0.1.0"
+  }
 }
