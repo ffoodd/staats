@@ -6,6 +6,7 @@ const psi     = require('psi')
 const a11y    = require('a11y')
 const html    = require('html-validator')
 const styles  = require('stylestats')
+const seo     = require('seo-checker')
 
 module.exports = (url) => {
   if (isBlank(url) || typeof url !== 'string') {
@@ -74,5 +75,18 @@ module.exports = (url) => {
     }
 
     console.log(result);
+  });
+
+
+  seo.load(url, function(response) {
+    console.log('-------------------');
+    console.log('SEO');
+    console.log('-------------------');
+
+    if (!response) {
+      console.log('SEO checker failed :/');
+    } else {
+      console.log( seo.meta(response) );
+    }  
   });
 }
