@@ -6,7 +6,6 @@ const psi     = require('psi')
 const a11y    = require('a11y')
 const html    = require('html-validator')
 const styles  = require('stylestats')
-const whois   = require('node-whois')
 
 module.exports = (url) => {
   if (isBlank(url) || typeof url !== 'string') {
@@ -76,17 +75,4 @@ module.exports = (url) => {
 
     console.log(result);
   });
-
-
-  whois.lookup(url, function(err, data) {
-    console.log('-------------------');
-    console.log('WHOIS');
-    console.log('-------------------');
-
-    if (err) {
-      console.error(err.message);
-    }
-
-    console.log(data)
-})
 }
