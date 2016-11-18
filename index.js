@@ -7,13 +7,15 @@ const a11y    = require('a11y')
 const html    = require('html-validator')
 const styles  = require('stylestats')
 const seo     = require('seo-checker')
+const request = require('request')
+const dom     = require('dom-stats')
 
 module.exports = (url) => {
   if (isBlank(url) || typeof url !== 'string') {
     throw new TypeError('staats expected a url as a string')
   };
 
-  url = nUrl(url);
+  url  = nUrl(url);
 
   psi(url, {nokey: 'true', strategy: 'mobile'}).then(data => {
     console.log('-------------------');
@@ -26,14 +28,14 @@ module.exports = (url) => {
   });
 
 
-  a11y(url, function (err, reports) {
+  a11y(url, function (error, reports) {
     console.log('-------------------');
     console.log('Accessibility');
     console.log('-------------------');
 
-    if (err) {
-      console.error(err.message);
-      process.exit(err.code || 1);
+    if (error) {
+      console.error(error.message);
+      process.exit(error.code || 1);
     }
 
     reports.audit.forEach(function (el) {
@@ -45,13 +47,13 @@ module.exports = (url) => {
   });
 
 
-  html({url: url, format: 'text'}, function (err, data) {
+  html({url: url, format: 'text'}, function (error, data) {
     console.log('-------------------');
     console.log('HTML validation');
     console.log('-------------------');
 
-    if (err) {
-      console.error(err.message);
+    if (error) {
+      console.error(error.message);
     }
 
     console.log(data);
@@ -66,13 +68,13 @@ module.exports = (url) => {
     "uniqueColors": false,
     "uniqueBackgroundImages": false
   });
-  css.parse(function (err, result) {
+  css.parse(function (error, result) {
     console.log('-------------------');
     console.log('StyleStats');
     console.log('-------------------');
 
-    if (err) {
-      console.error(err.message);
+    if (error) {
+      console.error(error.message);
     }
 
     console.log(result);
@@ -88,6 +90,17 @@ module.exports = (url) => {
       console.log('SEO checker failed :/');
     } else {
       console.log( seo.meta(response) );
+      console.log(response);
+    }
+  });
+
+  request(url, function (error, response, body) {
+    if (!error && response.statusCode == 200) {
+      console.log('-------------------');
+      console.log('DOM');
+      console.log('-------------------');
+
+      console.log( dom( body.toString() ) );
     }
   });
 }
