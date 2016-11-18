@@ -6,6 +6,7 @@ const psi     = require('psi')
 const a11y    = require('a11y')
 const html    = require('html-validator')
 const styles  = require('stylestats')
+const whois   = require('node-whois')
 
 module.exports = (url) => {
   if (isBlank(url) || typeof url !== 'string') {
@@ -25,14 +26,14 @@ module.exports = (url) => {
 
 
   a11y(url, function (err, reports) {
+    console.log('-------------------');
+    console.log('Accessibility');
+    console.log('-------------------');
+
     if (err) {
       console.error(err.message);
       process.exit(err.code || 1);
     }
-
-    console.log('-------------------');
-    console.log('Accessibility');
-    console.log('-------------------');
 
     reports.audit.forEach(function (el) {
       if (el.result === 'FAIL') {
@@ -44,13 +45,13 @@ module.exports = (url) => {
 
 
   html({url: url, format: 'text'}, function (err, data) {
-    if (err) {
-      console.error(err.message);
-    }
-
     console.log('-------------------');
     console.log('HTML validation');
     console.log('-------------------');
+
+    if (err) {
+      console.error(err.message);
+    }
 
     console.log(data);
   });
@@ -65,14 +66,27 @@ module.exports = (url) => {
     "uniqueBackgroundImages": false
   });
   css.parse(function (err, result) {
-    if (err) {
-      console.error(err.message);
-    }
-
     console.log('-------------------');
     console.log('StyleStats');
     console.log('-------------------');
 
+    if (err) {
+      console.error(err.message);
+    }
+
     console.log(result);
   });
+
+
+  whois.lookup(url, function(err, data) {
+    console.log('-------------------');
+    console.log('WHOIS');
+    console.log('-------------------');
+
+    if (err) {
+      console.error(err.message);
+    }
+
+    console.log(data)
+})
 }
