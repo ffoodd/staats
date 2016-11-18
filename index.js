@@ -22,6 +22,7 @@ module.exports = (url) => {
 
     console.log('Speed score: ' + data.ruleGroups.SPEED.score);
     console.log('Usability score: ' + data.ruleGroups.USABILITY.score);
+    console.log(data.pageStats);
   });
 
 
@@ -87,6 +88,6 @@ module.exports = (url) => {
       console.log('SEO checker failed :/');
     } else {
       console.log( seo.meta(response) );
-    }  
+    }
   });
 }
