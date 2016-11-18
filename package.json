@@ -1,10 +1,18 @@
 {
   "name": "staats",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "How's your website going?",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ffoodd/staats.git"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
+  "bin": {
+    "staats": "cli.js"
   },
   "keywords": [
     "audit",
@@ -26,9 +34,13 @@
   },
   "homepage": "https://github.com/ffoodd/staats#readme",
   "dependencies": {
-    "psi": "latest",
-    "gulp": "latest",
-    "gulp-axe-webdriver": "latest",
-    "gulp-louis": "^2.4.0"
+    "a11y": "^0.4.1",
+    "html-validator": "^2.0.4",
+    "is-blank": "^1.1.0",
+    "meow": "^3.7.0",
+    "normalize-url": "^1.8.0",
+    "psi": "^2.0.4",
+    "shtml": "^0.1.0",
+    "stylestats": "^6.3.0"
   }
 }
