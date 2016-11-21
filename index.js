@@ -90,7 +90,6 @@ module.exports = (url) => {
       console.log('SEO checker failed :/');
     } else {
       console.log( seo.meta(response) );
-      console.log(response);
     }
   });
 
