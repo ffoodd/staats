@@ -43,6 +43,7 @@
     "psi": "^2.0.4",
     "request": "^2.78.0",
     "seo-checker": "^0.3.2",
+    "shtml": "^0.1.0",
     "stylestats": "^6.3.0"
   }
 }
