@@ -34,15 +34,15 @@ And it should log a few things. And this is pretty ugly for now :)
 
 ### Tools
 
-* [] Add [observatory-cli](https://github.com/mozilla/observatory-cli) by mozilla
-* [] Add [sitespeed.io](https://www.sitespeed.io/)
-* [] Try [Passmarked](https://github.com/passmarked) scripts?
-* [] Add [broken-link-checker](https://github.com/stevenvachon/broken-link-checker) by Steven Vachon
-* [] Add [Phantomas](https://github.com/macbre/phantomas) by Maciej Brencz
+* [ ] Add [observatory-cli](https://github.com/mozilla/observatory-cli) by mozilla
+* [ ] Add [sitespeed.io](https://www.sitespeed.io/)
+* [ ] Try [Passmarked](https://github.com/passmarked) scripts?
+* [ ] Add [broken-link-checker](https://github.com/stevenvachon/broken-link-checker) by Steven Vachon
+* [ ] Add [Phantomas](https://github.com/macbre/phantomas) by Maciej Brencz
 
 ### Usage
 
-* [] Export to json file(s)
-* [] Elaborate a notation strategy
-* [] Get scores for accessibility, performance, security, search engine optimization
-* [] Prettify the console output
+* [ ] Export to json file(s)
+* [ ] Elaborate a notation strategy
+* [ ] Get scores for accessibility, performance, security, search engine optimization
+* [ ] Prettify the console output
