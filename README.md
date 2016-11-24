@@ -37,7 +37,10 @@ And it should log a few things. And this is pretty ugly for now :)
 * [ ] Add [observatory-cli](https://github.com/mozilla/observatory-cli) by mozilla
 * [ ] Add [sitespeed.io](https://www.sitespeed.io/)
 * [ ] Try [Passmarked](https://github.com/passmarked) scripts?
-* [ ] Add [broken-link-checker](https://github.com/stevenvachon/broken-link-checker) by Steven Vachon
+* [ ] Add [broken-link-checker](https://github.com/stevenvachon/broken-link-checker) by Steven Vachon, or:
+ * using [pagelinks](https://github.com/zrrrzzt/pagelinks) by Geir Gåsodden
+ * and [request](https://www.npmjs.com/package/request)(already in staats'dependecies) on each link
+ * we might be able to check if every link returns a 200 HTTP response
 * [ ] Add [Phantomas](https://github.com/macbre/phantomas) by Maciej Brencz
 
 ### Usage
