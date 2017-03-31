@@ -42,6 +42,7 @@ And it should log a few things. And this is pretty ugly for now :)
  * and [request](https://www.npmjs.com/package/request)(already in staats'dependecies) on each link
  * we might be able to check if every link returns a 200 HTTP response
 * [ ] Add [Phantomas](https://github.com/macbre/phantomas) by Maciej Brencz
+* [ ] Add [html-inspector](https://github.com/philipwalton/html-inspector) by Philip Walton
 
 ### Usage
 
