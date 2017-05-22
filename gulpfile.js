@@ -33,3 +33,5 @@ gulp.task('louis', function() {
     outputFileName: 'reports/louis.json'
   });
 });
+
+gulp.task('default', ['axe', 'psi', 'louis'])
