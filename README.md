@@ -43,6 +43,7 @@ And it should log a few things. And this is pretty ugly for now :)
  * we might be able to check if every link returns a 200 HTTP response
 * [ ] Add [Phantomas](https://github.com/macbre/phantomas) by Maciej Brencz
 * [ ] Add [html-inspector](https://github.com/philipwalton/html-inspector) by Philip Walton
+* [ ] Add [node-faux-pas](https://github.com/filamentgroup/node-faux-pas) by Zach Leatherman
 
 ### Usage
 
