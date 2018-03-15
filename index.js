@@ -89,7 +89,9 @@ module.exports = (url) => {
     if (!response) {
       console.log('SEO checker failed :/');
     } else {
-      console.log( seo.meta(response) );
+      let data = JSON.parse(JSON.stringify(seo.meta(response)));
+      // Now we can check every single data in response
+      console.log( data.title );
     }
   });
 
