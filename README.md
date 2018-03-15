@@ -30,6 +30,10 @@ staats ffoodd.fr
 
 And it should log a few things. And this is pretty ugly for now :)
 
+### Working locally
+
+If you want to bontribute, you may use `node cli.js {args}`.
+
 ## Roadmap
 
 ### Tools
