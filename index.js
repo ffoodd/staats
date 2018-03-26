@@ -10,6 +10,8 @@ const seo     = require('seo-checker')
 const request = require('request')
 const dom     = require('dom-stats')
 
+var Score = require('./scores/score.js')
+
 module.exports = (url) => {
   if (isBlank(url) || typeof url !== 'string') {
     throw new TypeError('staats expected a url as a string')
@@ -17,7 +19,7 @@ module.exports = (url) => {
 
   url  = nUrl(url);
 
-  psi(url, {nokey: 'true', strategy: 'mobile'}).then(data => {
+  /*psi(url, {nokey: 'true', strategy: 'mobile'}).then(data => {
     console.log('-------------------');
     console.log('Page Speed Insights');
     console.log('-------------------');
@@ -25,10 +27,10 @@ module.exports = (url) => {
     console.log('Speed score: ' + data.ruleGroups.SPEED.score);
     console.log('Usability score: ' + data.ruleGroups.USABILITY.score);
     console.log(data.pageStats);
-  });
+  });*/
 
 
-  a11y(url, function (error, reports) {
+  /*a11y(url, function (error, reports) {
     console.log('-------------------');
     console.log('Accessibility');
     console.log('-------------------');
@@ -44,23 +46,23 @@ module.exports = (url) => {
         console.log(el.elements);
       }
     });
-  });
+  });*/
 
 
-  html({url: url, format: 'text'}, function (error, data) {
+  /*html({url: url, format: 'text'}, function (error, data) {
     console.log('-------------------');
     console.log('HTML validation');
     console.log('-------------------');
-
+s
     if (error) {
       console.error(error.message);
     }
 
     console.log(data);
-  });
+  });*/
 
 
-  let css = new styles(url, {
+  /*let css = new styles(url, {
     "ratioOfDataUriSize": false,
     "gzippedSize": false,
     "uniqueFontSizes": false,
@@ -78,10 +80,10 @@ module.exports = (url) => {
     }
 
     console.log(result);
-  });
+  });*/
 
 
-  seo.load(url, function(response) {
+  /*seo.load(url, function(response) {
     console.log('-------------------');
     console.log('SEO');
     console.log('-------------------');
@@ -93,9 +95,13 @@ module.exports = (url) => {
       // Now we can check every single data in response
       console.log( data.title );
     }
-  });
+  });*/
+  
+  let seo = new Score();
+  
+  seo.getResults(url);
 
-  request(url, function (error, response, body) {
+  /*request(url, function (error, response, body) {
     if (!error && response.statusCode == 200) {
       console.log('-------------------');
       console.log('DOM');
@@ -103,5 +109,5 @@ module.exports = (url) => {
 
       console.log( dom( body.toString() ) );
     }
-  });
+  });*/
 }
