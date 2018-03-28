@@ -17,7 +17,78 @@ module.exports = (url) => {
 
   url  = nUrl(url);
 
-  psi(url, {nokey: 'true', strategy: 'mobile'}).then(data => {
+  html({url: url})
+    .then((data) => {
+      console.log('-------------------')
+      console.log('HTML validation')
+      console.log('-------------------')
+      
+      let results = JSON.parse(data);
+      
+      results.messages.forEach( function(result, index) {
+        let test = new Object(result);
+          test.status = result.subType;
+          test.name   = result.message;
+          if (!result.firstLine) {
+            test.firstLine = result.lastLine;
+          }
+          test.value  = `From line ${result.firstLine}, column ${result.firstColumn}; to line ${result.lastLine}, column ${result.lastColumn}`;
+          
+        console.log(test.status + ' // ' + test.name + ' // ' + test.value)
+      })
+    })
+    .catch((error) => {
+      console.error(error)
+    });
+    
+  seo.load(url, function(response) {
+    console.log('-------------------');
+    console.log('SEO');
+    console.log('-------------------');
+
+    if (!response) {
+      console.error('SEO checker failed :/');
+    } else {
+      let results = seo.meta(response);
+      
+      for (let result in results) {
+        let test = new Object(result);
+          test.status = isBlank(results[result]);
+          test.name   = result;
+          test.value  = results[result];
+          
+        console.log(test.status + ' // ' + test.name + ' // ' + test.value)
+      }
+    }
+  });
+
+  const css = new styles(url, {
+    "uniqueFontSizes": false,
+    "uniqueFontFamilies": false,
+    "uniqueColors": false,
+    "uniqueBackgroundImages": false
+  });
+  css.parse()
+    .then((data) => {
+      console.log('-------------------')
+      console.log('CSS stats')
+      console.log('-------------------')
+      
+      let results = JSON.parse(JSON.stringify(data));
+      
+      for (let result in results) {
+        let test = new Object(result);
+          // 100 is arbitrary value, need a way to define a budget!
+          test.status = (parseInt(results[result]) >= 100);
+          test.name   = result;
+          test.value  = results[result];
+          
+        console.log(test.status + ' // ' + test.name + ' // ' + test.value)
+      }
+    })
+    .catch((err) => console.error(err));
+  
+  /*psi(url, {nokey: 'true', strategy: 'mobile'}).then(data => {
     console.log('-------------------');
     console.log('Page Speed Insights');
     console.log('-------------------');
@@ -25,10 +96,9 @@ module.exports = (url) => {
     console.log('Speed score: ' + data.ruleGroups.SPEED.score);
     console.log('Usability score: ' + data.ruleGroups.USABILITY.score);
     console.log(data.pageStats);
-  });
+  });*/
 
-
-  a11y(url, function (error, reports) {
+  /*a11y(url, function (error, reports) {
     console.log('-------------------');
     console.log('Accessibility');
     console.log('-------------------');
@@ -44,58 +114,17 @@ module.exports = (url) => {
         console.log(el.elements);
       }
     });
-  });
+  });*/  /*psi(url, {nokey: 'true', strategy: 'mobile'}).then(data => {
+      console.log('-------------------');
+      console.log('Page Speed Insights');
+      console.log('-------------------');
 
+      console.log('Speed score: ' + data.ruleGroups.SPEED.score);
+      console.log('Usability score: ' + data.ruleGroups.USABILITY.score);
+      console.log(data.pageStats);
+    });*/
 
-  html({url: url, format: 'text'}, function (error, data) {
-    console.log('-------------------');
-    console.log('HTML validation');
-    console.log('-------------------');
-
-    if (error) {
-      console.error(error.message);
-    }
-
-    console.log(data);
-  });
-
-
-  let css = new styles(url, {
-    "ratioOfDataUriSize": false,
-    "gzippedSize": false,
-    "uniqueFontSizes": false,
-    "uniqueFontFamilies": false,
-    "uniqueColors": false,
-    "uniqueBackgroundImages": false
-  });
-  css.parse(function (error, result) {
-    console.log('-------------------');
-    console.log('StyleStats');
-    console.log('-------------------');
-
-    if (error) {
-      console.error(error.message);
-    }
-
-    console.log(result);
-  });
-
-
-  seo.load(url, function(response) {
-    console.log('-------------------');
-    console.log('SEO');
-    console.log('-------------------');
-
-    if (!response) {
-      console.log('SEO checker failed :/');
-    } else {
-      let data = JSON.parse(JSON.stringify(seo.meta(response)));
-      // Now we can check every single data in response
-      console.log( data.title );
-    }
-  });
-
-  request(url, function (error, response, body) {
+  /*request(url, function (error, response, body) {
     if (!error && response.statusCode == 200) {
       console.log('-------------------');
       console.log('DOM');
@@ -103,5 +132,5 @@ module.exports = (url) => {
 
       console.log( dom( body.toString() ) );
     }
-  });
+  });*/
 }
