@@ -7,7 +7,8 @@ const a11y    = require('a11y')
 const html    = require('html-validator')
 const styles  = require('stylestats')
 const seo     = require('seo-checker')
-const request = require('request')
+const req     = require('request')
+const request = require('request-promise-native')
 const dom     = require('dom-stats')
 
 module.exports = (url) => {
@@ -40,14 +41,14 @@ module.exports = (url) => {
     .catch((error) => {
       console.error(error)
     });
-    
+  
   seo.load(url, function(response) {
-    console.log('-------------------');
-    console.log('SEO');
-    console.log('-------------------');
+    console.log('-------------------')
+    console.log('SEO')
+    console.log('-------------------')
 
     if (!response) {
-      console.error('SEO checker failed :/');
+      console.error('SEO checker failed :/')
     } else {
       let results = seo.meta(response);
       
@@ -77,6 +78,7 @@ module.exports = (url) => {
       let results = JSON.parse(JSON.stringify(data));
       
       for (let result in results) {
+        // if result is propertiesCount, we'll have to do better :)
         let test = new Object(result);
           // 100 is arbitrary value, need a way to define a budget!
           test.status = (parseInt(results[result]) >= 100);
@@ -88,6 +90,27 @@ module.exports = (url) => {
     })
     .catch((err) => console.error(err));
   
+  request(url)
+    .then((data) => {    
+      console.log('-------------------')
+      console.log('DOM')
+      console.log('-------------------')
+
+      let results = dom(data);
+      
+      for (let result in results) {
+        // if result is tagCounts, we'll have to do better :)
+        let test = new Object(result);
+          // 100 is arbitrary value, need a way to define a budget!
+          test.status = (parseInt(results[result]) >= 100);
+          test.name   = result;
+          test.value  = results[result];
+          
+        console.log(test.status + ' // ' + test.name + ' // ' + test.value)
+      }
+    })
+    .catch((err) => console.error(err));
+    
   /*psi(url, {nokey: 'true', strategy: 'mobile'}).then(data => {
     console.log('-------------------');
     console.log('Page Speed Insights');
@@ -114,23 +137,5 @@ module.exports = (url) => {
         console.log(el.elements);
       }
     });
-  });*/  /*psi(url, {nokey: 'true', strategy: 'mobile'}).then(data => {
-      console.log('-------------------');
-      console.log('Page Speed Insights');
-      console.log('-------------------');
-
-      console.log('Speed score: ' + data.ruleGroups.SPEED.score);
-      console.log('Usability score: ' + data.ruleGroups.USABILITY.score);
-      console.log(data.pageStats);
-    });*/
-
-  /*request(url, function (error, response, body) {
-    if (!error && response.statusCode == 200) {
-      console.log('-------------------');
-      console.log('DOM');
-      console.log('-------------------');
-
-      console.log( dom( body.toString() ) );
-    }
   });*/
 }

@@ -45,5 +45,8 @@
     "seo-checker": "^0.3.2",
     "shtml": "^0.1.0",
     "stylestats": "^7.0.1"
+  },
+  "devDependencies": {
+    "request-promise-native": "^1.0.5"
   }
 }
