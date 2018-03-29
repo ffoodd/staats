@@ -28,7 +28,7 @@ module.exports = (url) => {
       
       results.messages.forEach( function(result, index) {
         let test = new Object(result);
-          test.status = result.subType;
+          test.status = (result.type == "error");
           test.name   = result.message;
           if (!result.firstLine) {
             test.firstLine = result.lastLine;
