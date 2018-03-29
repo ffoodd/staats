@@ -19,7 +19,7 @@ module.exports = (url) => {
   url  = nUrl(url);
 
   html({url: url})
-    .then((data) => {
+    .then(data => {
       console.log('-------------------')
       console.log('HTML validation')
       console.log('-------------------')
@@ -38,19 +38,17 @@ module.exports = (url) => {
         console.log(test.status + ' // ' + test.name + ' // ' + test.value)
       })
     })
-    .catch((error) => {
-      console.error(error)
-    });
+    .catch((error) => {console.error(error)});
   
-  seo.load(url, function(response) {
+  seo.load(url, function(data) {
     console.log('-------------------')
     console.log('SEO')
     console.log('-------------------')
 
-    if (!response) {
+    if (!data) {
       console.error('SEO checker failed :/')
     } else {
-      let results = seo.meta(response);
+      let results = seo.meta(data);
       
       for (let result in results) {
         let test = new Object(result);
@@ -70,7 +68,7 @@ module.exports = (url) => {
     "uniqueBackgroundImages": false
   });
   css.parse()
-    .then((data) => {
+    .then(data => {
       console.log('-------------------')
       console.log('CSS stats')
       console.log('-------------------')
@@ -88,10 +86,10 @@ module.exports = (url) => {
         console.log(test.status + ' // ' + test.name + ' // ' + test.value)
       }
     })
-    .catch((err) => console.error(err));
+    .catch((error) => console.error(error));
   
   request(url)
-    .then((data) => {    
+    .then(data => {    
       console.log('-------------------')
       console.log('DOM')
       console.log('-------------------')
@@ -109,17 +107,59 @@ module.exports = (url) => {
         console.log(test.status + ' // ' + test.name + ' // ' + test.value)
       }
     })
-    .catch((err) => console.error(err));
+    .catch((error) => console.error(error));
     
-  /*psi(url, {nokey: 'true', strategy: 'mobile'}).then(data => {
-    console.log('-------------------');
-    console.log('Page Speed Insights');
-    console.log('-------------------');
-
-    console.log('Speed score: ' + data.ruleGroups.SPEED.score);
-    console.log('Usability score: ' + data.ruleGroups.USABILITY.score);
-    console.log(data.pageStats);
-  });*/
+  psi(url, {nokey: 'true', strategy: 'mobile'})
+    .then(data => {
+      console.log('-------------------')
+      console.log('Page Speed Insights Scores')
+      console.log('-------------------')
+      
+      let scores = data.ruleGroups;
+      
+      for (let result in scores) {
+        let test = new Object(result);
+          // 90 is arbitrary value, need a way to define a budget!
+          test.status = (scores[result].score >= 90);
+          test.name   = result;
+          test.value  = scores[result].score;
+          
+        console.log(test.status + ' // ' + test.name + ' // ' + test.value)
+      }
+      
+      console.log('-------------------')
+      console.log('Page Speed Insights Stats')
+      console.log('-------------------')
+      
+      let results = data.pageStats;
+      
+      for (let result in results) {
+        let test = new Object(result);
+          // 100 is arbitrary value, need a way to define a budget!
+          test.status = (parseInt(results[result]) >= 100);
+          test.name   = result;
+          test.value  = results[result];
+          
+        console.log(test.status + ' // ' + test.name + ' // ' + test.value)
+      }
+      
+      console.log('-------------------')
+      console.log('Page Speed Insights Tests')
+      console.log('-------------------')
+      
+      let formattedResults = data.formattedResults.ruleResults;
+      
+      for (let result in formattedResults) {
+        let test = new Object(result);
+          // 100 is arbitrary value, need a way to define a budget!
+          test.status = (formattedResults[result].ruleImpact > 0);
+          test.name   = formattedResults[result].localizedRuleName;
+          test.value  = formattedResults[result].summary.format;
+          
+        console.log(test.status + ' // ' + test.name + ' // ' + test.value)
+      }
+    })
+    .catch((error) => console.error(error));
 
   /*a11y(url, function (error, reports) {
     console.log('-------------------');
