@@ -154,7 +154,10 @@ module.exports = (url) => {
           // 100 is arbitrary value, need a way to define a budget!
           test.status = (formattedResults[result].ruleImpact > 0);
           test.name   = formattedResults[result].localizedRuleName;
-          test.value  = formattedResults[result].summary.format;
+          test.value  = formattedResults[result].groups;
+          if (formattedResults[result].summary) {
+            test.value  = formattedResults[result].summary.format;
+          }
           
         console.log(test.status + ' // ' + test.name + ' // ' + test.value)
       }
