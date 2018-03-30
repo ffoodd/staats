@@ -26,7 +26,7 @@ module.exports = (url) => {
       
       let results = JSON.parse(data);
       
-      results.messages.forEach( function(result, index) {
+      for (let result in results.messages) {
         let test = new Object(result);
           test.status = (result.type == "error");
           test.name   = result.message;
@@ -36,11 +36,11 @@ module.exports = (url) => {
           test.value  = `From line ${result.firstLine}, column ${result.firstColumn}; to line ${result.lastLine}, column ${result.lastColumn}`;
           
         console.log(test.status + ' // ' + test.name + ' // ' + test.value)
-      })
+      }
     })
     .catch((error) => {console.error(error)});
   
-  seo.load(url, function(data) {
+  /*seo.load(url, function(data) {
     console.log('-------------------')
     console.log('SEO')
     console.log('-------------------')
@@ -181,5 +181,5 @@ module.exports = (url) => {
         
       console.log(test.status + ' // ' + test.name + ' // ' + test.value)
     });
-  });
+  });*/
 }
