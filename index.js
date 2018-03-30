@@ -24,23 +24,24 @@ module.exports = (url) => {
       console.log('HTML validation')
       console.log('-------------------')
       
-      let results = JSON.parse(data);
-      
-      for (let result in results.messages) {
-        let test = new Object(result);
-          test.status = (result.type == "error");
-          test.name   = result.message;
-          if (!result.firstLine) {
-            test.firstLine = result.lastLine;
+      let messages = JSON.parse(data);
+      let results  = messages.messages.reduce((results, value, key) => { results[key] = value; return results; }, {});
+
+      for (let result in results) {
+        let test = new Object(results[result]);
+          test.status = (results[result].type == "error");
+          test.name   = results[result].message;
+          if (!results[result].firstLine) {
+            test.firstLine = results[result].lastLine;
           }
-          test.value  = `From line ${result.firstLine}, column ${result.firstColumn}; to line ${result.lastLine}, column ${result.lastColumn}`;
+          test.value  = `From line ${results[result].firstLine}, column ${results[result].firstColumn}; to line ${results[result].lastLine}, column ${results[result].lastColumn}`;
           
         console.log(test.status + ' // ' + test.name + ' // ' + test.value)
       }
     })
     .catch((error) => {console.error(error)});
   
-  /*seo.load(url, function(data) {
+  seo.load(url, function(data) {
     console.log('-------------------')
     console.log('SEO')
     console.log('-------------------')
@@ -173,13 +174,15 @@ module.exports = (url) => {
       console.error(error.message)
     }
     
-    data.audit.forEach(function (result) {
-      let test = new Object(result);
-        test.status = (result.result == "FAIL");
-        test.name   = result.heading;
-        test.value  = result.elements.replace(/(\r\n\t|\n|\r\t)/gm, ', ');
+    let results = data.audit.reduce((results, value, key) => { results[key] = value; return results; }, {});
+
+    for (let result in results) {
+      let test = new Object(results[result]);
+        test.status = (results[result].result == "FAIL");
+        test.name   = results[result].heading;
+        test.value  = results[result].elements.replace(/(\r\n\t|\n|\r\t)/gm, ', ');
         
       console.log(test.status + ' // ' + test.name + ' // ' + test.value)
-    });
-  });*/
+    }
+  });
 }
