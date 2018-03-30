@@ -161,21 +161,22 @@ module.exports = (url) => {
     })
     .catch((error) => console.error(error));
 
-  /*a11y(url, function (error, reports) {
-    console.log('-------------------');
-    console.log('Accessibility');
-    console.log('-------------------');
+  a11y(url, function (error, data) {
+    console.log('-------------------')
+    console.log('Accessibility')
+    console.log('-------------------')
 
     if (error) {
-      console.error(error.message);
-      process.exit(error.code || 1);
+      console.error(error.message)
     }
-
-    reports.audit.forEach(function (el) {
-      if (el.result === 'FAIL') {
-        console.log(el.severity + ': ' + el.heading);
-        console.log(el.elements);
-      }
+    
+    data.audit.forEach(function (result) {
+      let test = new Object(result);
+        test.status = (result.result == "FAIL");
+        test.name   = result.heading;
+        test.value  = result.elements.replace(/(\r\n\t|\n|\r\t)/gm, ', ');
+        
+      console.log(test.status + ' // ' + test.name + ' // ' + test.value)
     });
-  });*/
+  });
 }
