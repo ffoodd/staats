@@ -47,6 +47,8 @@
     "stylestats": "^7.0.1"
   },
   "devDependencies": {
+    "chalk": "^2.3.2",
+    "log-symbols": "^2.2.0",
     "request-promise-native": "^1.0.5"
   }
 }

@@ -10,6 +10,8 @@ const seo     = require('seo-checker')
 const req     = require('request')
 const request = require('request-promise-native')
 const dom     = require('dom-stats')
+const symbols = require('log-symbols')
+const chalk   = require('chalk')
 
 module.exports = (url) => {
   if (isBlank(url) || typeof url !== 'string') {
@@ -17,6 +19,18 @@ module.exports = (url) => {
   };
 
   url  = nUrl(url);
+  
+  function displayTitle(title) {
+    console.log(`\n
+        ${chalk.inverse.bold(title)}
+    `)
+  };
+  
+  function displayTest(test) {
+    let symbol = (test.status ? symbols.success : symbols.error);
+
+    console.log(chalk`${symbol} {bold ${test.name}} ${test.value}`)
+  };
   
   /* Using Genrators?
   @see https://hacks.mozilla.org/2015/05/es6-in-depth-generators/  
@@ -28,9 +42,7 @@ module.exports = (url) => {
 
   html({url: url})
     .then(data => {
-      console.log('-------------------')
-      console.log('HTML validation')
-      console.log('-------------------')
+      displayTitle('HTML validation')
       
       let messages = JSON.parse(data);
       let results  = messages.messages.reduce((results, value, key) => { results[key] = value; return results; }, {});
@@ -44,15 +56,13 @@ module.exports = (url) => {
           }
           test.value  = `From line ${results[result].firstLine}, column ${results[result].firstColumn}; to line ${results[result].lastLine}, column ${results[result].lastColumn}`;
           
-        console.log(test.status + ' // ' + test.name + ' // ' + test.value)
+        displayTest(test)
       }
     })
     .catch((error) => {console.error(error)});
   
   seo.load(url, function(data) {
-    console.log('-------------------')
-    console.log('SEO')
-    console.log('-------------------')
+    displayTitle('SEO')
 
     if (!data) {
       console.error('SEO checker failed :/')
@@ -65,7 +75,7 @@ module.exports = (url) => {
           test.name   = result;
           test.value  = results[result];
           
-        console.log(test.status + ' // ' + test.name + ' // ' + test.value)
+        displayTest(test)
       }
     }
   });
@@ -78,9 +88,7 @@ module.exports = (url) => {
   });
   css.parse()
     .then(data => {
-      console.log('-------------------')
-      console.log('CSS stats')
-      console.log('-------------------')
+      displayTitle('CSS Stats')
       
       let results = JSON.parse(JSON.stringify(data));
       
@@ -92,16 +100,14 @@ module.exports = (url) => {
           test.name   = result;
           test.value  = results[result];
           
-        console.log(test.status + ' // ' + test.name + ' // ' + test.value)
+        displayTest(test)
       }
     })
     .catch((error) => console.error(error));
   
   request(url)
     .then(data => {    
-      console.log('-------------------')
-      console.log('DOM')
-      console.log('-------------------')
+      displayTitle('DOM Stats')
 
       let results = dom(data);
       
@@ -113,16 +119,14 @@ module.exports = (url) => {
           test.name   = result;
           test.value  = results[result];
           
-        console.log(test.status + ' // ' + test.name + ' // ' + test.value)
+        displayTest(test)
       }
     })
     .catch((error) => console.error(error));
     
   psi(url, {nokey: 'true', strategy: 'mobile'})
     .then(data => {
-      console.log('-------------------')
-      console.log('Page Speed Insights Scores')
-      console.log('-------------------')
+      displayTitle('Page Speed Insights Scores')
       
       let scores = data.ruleGroups;
       
@@ -133,12 +137,10 @@ module.exports = (url) => {
           test.name   = result;
           test.value  = scores[result].score;
           
-        console.log(test.status + ' // ' + test.name + ' // ' + test.value)
+        displayTest(test)
       }
       
-      console.log('-------------------')
-      console.log('Page Speed Insights Stats')
-      console.log('-------------------')
+      displayTitle('Page Speed Insights Stats')
       
       let results = data.pageStats;
       
@@ -149,12 +151,10 @@ module.exports = (url) => {
           test.name   = result;
           test.value  = results[result];
           
-        console.log(test.status + ' // ' + test.name + ' // ' + test.value)
+        displayTest(test)
       }
       
-      console.log('-------------------')
-      console.log('Page Speed Insights Tests')
-      console.log('-------------------')
+      displayTitle('Page Speed Insights Tests')
       
       let formattedResults = data.formattedResults.ruleResults;
       
@@ -168,15 +168,13 @@ module.exports = (url) => {
             test.value  = formattedResults[result].summary.format;
           }
           
-        console.log(test.status + ' // ' + test.name + ' // ' + test.value)
+        displayTest(test)
       }
     })
     .catch((error) => console.error(error));
 
   a11y(url, function (error, data) {
-    console.log('-------------------')
-    console.log('Accessibility')
-    console.log('-------------------')
+    displayTitle('Accessibility')
 
     if (error) {
       console.error(error.message)
@@ -190,7 +188,7 @@ module.exports = (url) => {
         test.name   = results[result].heading;
         test.value  = results[result].elements.replace(/(\r\n\t|\n|\r\t)/gm, ', ');
         
-      console.log(test.status + ' // ' + test.name + ' // ' + test.value)
+      displayTest(test)
     }
   });
 }
