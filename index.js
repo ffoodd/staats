@@ -17,6 +17,14 @@ module.exports = (url) => {
   };
 
   url  = nUrl(url);
+  
+  /* Using Genrators?
+  @see https://hacks.mozilla.org/2015/05/es6-in-depth-generators/  
+  function* displayresults(results) {
+    for (let result in results) {
+      yield result;
+    }
+  }*/
 
   html({url: url})
     .then(data => {
