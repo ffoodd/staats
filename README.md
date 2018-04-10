@@ -39,19 +39,20 @@ If you want to bontribute, you may use `node cli.js {args}`.
 ### Tools
 
 * [ ] Add [observatory-cli](https://github.com/mozilla/observatory-cli) by mozilla
-* [ ] Add [sitespeed.io](https://www.sitespeed.io/)
-* [ ] Try [Passmarked](https://github.com/passmarked) scripts?
+* [ ] Add [sitespeed.io](https://www.sitespeed.io/
 * [ ] Add [broken-link-checker](https://github.com/stevenvachon/broken-link-checker) by Steven Vachon, or:
  * using [pagelinks](https://github.com/zrrrzzt/pagelinks) by Geir Gåsodden
- * and [request](https://www.npmjs.com/package/request)(already in staats'dependecies) on each link
+ * and [request](https://www.npmjs.com/package/request) (already in staats' dependencies) on each link
  * we might be able to check if every link returns a 200 HTTP response
 * [ ] Add [Phantomas](https://github.com/macbre/phantomas) by Maciej Brencz
 * [ ] Add [html-inspector](https://github.com/philipwalton/html-inspector) by Philip Walton
 * [ ] Add [node-faux-pas](https://github.com/filamentgroup/node-faux-pas) by Zach Leatherman
+* [ ] Add [Node ZAProxy](https://www.npmjs.com/package/zaproxy) by OWASP
 
 ### Usage
 
-* [ ] Export to json file(s)
 * [ ] Elaborate a notation strategy
 * [ ] Get scores for accessibility, performance, security, search engine optimization
 * [ ] Prettify the console output
+* [ ] Export to json file(s)
+
