@@ -49,6 +49,7 @@ If you want to bontribute, you may use `node cli.js {args}`.
 * [ ] Add [html-inspector](https://github.com/philipwalton/html-inspector) by Philip Walton
 * [ ] Add [node-faux-pas](https://github.com/filamentgroup/node-faux-pas) by Zach Leatherman
 * [ ] Add [Node ZAProxy](https://www.npmjs.com/package/zaproxy) by OWASP
+* [ ] Add [Wappalyzer](https://www.npmjs.com/package/wappalyzer).
 
 ### Usage
 
