@@ -38,6 +38,7 @@ If you want to bontribute, you may use `node cli.js {args}`.
 
 ### Tools
 
+* [ ] Use [aXe-core](https://github.com/dequelabs/axe-core) instead of a11y
 * [ ] Add [observatory-cli](https://github.com/mozilla/observatory-cli) by mozilla
 * [ ] Add [sitespeed.io](https://www.sitespeed.io/
 * [ ] Add [broken-link-checker](https://github.com/stevenvachon/broken-link-checker) by Steven Vachon, or:
