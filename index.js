@@ -32,7 +32,7 @@ module.exports = (url) => {
     console.log(chalk`${symbol} {bold ${test.name}} ${test.value}`)
   };
   
-  /* Using Genrators?
+  /* Using Generators?
   @see https://hacks.mozilla.org/2015/05/es6-in-depth-generators/  
   function* displayresults(results) {
     for (let result in results) {
