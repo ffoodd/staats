@@ -71,7 +71,7 @@ module.exports = (url) => {
       
       for (let result in results) {
         let test = new Object(result);
-          test.status = isBlank(results[result]);
+          test.status = !isBlank(results[result]);
           test.name   = result;
           test.value  = results[result];
           
