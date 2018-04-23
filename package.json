@@ -49,6 +49,7 @@
   "devDependencies": {
     "chalk": "^2.3.2",
     "log-symbols": "^2.2.0",
-    "request-promise-native": "^1.0.5"
+    "request-promise-native": "^1.0.5",
+    "w3c-css": "^2.0.1"
   }
 }

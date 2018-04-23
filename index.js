@@ -5,6 +5,7 @@ const nUrl    = require('normalize-url')
 const psi     = require('psi')
 const a11y    = require('a11y')
 const html    = require('html-validator')
+const css     = require('w3c-css')
 const styles  = require('stylestats')
 const seo     = require('seo-checker')
 const req     = require('request')
@@ -61,6 +62,25 @@ module.exports = (url) => {
     })
     .catch((error) => {console.error(error)});
   
+  css.validate(url, function(error, data) {
+    displayTitle('CSS validation')
+    
+    if(error) {
+      console.error(error)
+    } else {
+      let results = data.errors;
+      
+      for (let result in results) {
+        let test = new Object(results[result]);
+          test.status = (results[result].errorType != "parse-error");
+          test.name   = results[result].message;
+          test.value  = `at line ${results[result].line}`;
+          
+        displayTest(test)
+      }
+    }
+  });
+    
   seo.load(url, function(data) {
     displayTitle('SEO')
 
@@ -80,13 +100,13 @@ module.exports = (url) => {
     }
   });
 
-  const css = new styles(url, {
+  const stats = new styles(url, {
     "uniqueFontSizes": false,
     "uniqueFontFamilies": false,
     "uniqueColors": false,
     "uniqueBackgroundImages": false
   });
-  css.parse()
+  stats.parse()
     .then(data => {
       displayTitle('CSS Stats')
       
