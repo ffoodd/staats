@@ -19,7 +19,7 @@ module.exports = (url) => {
     throw new TypeError('staats expected a url as a string')
   };
 
-  url  = nUrl(url);
+  url = nUrl(url);
   
   function displayTitle(title) {
     console.log(`\n
@@ -126,7 +126,7 @@ module.exports = (url) => {
     .catch((error) => console.error(error));
   
   request(url)
-    .then(data => {    
+    .then(data => {
       displayTitle('DOM Stats')
 
       let results = dom(data);
