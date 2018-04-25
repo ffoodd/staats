@@ -159,6 +159,7 @@ module.exports = (url) => {
             if(undefined !== result.featureData.missing 
               && 'Opera Mini (all)' !== result.featureData.missing
               && 'Opera Mini (all), Opera Mobile (12.1)' !== result.featureData.missing
+              && 'IE (11), Opera Mini (all), Opera Mobile (12.1)' !== result.featureData.missing
               && 'Opera Mini (all), Opera Mobile (12.1), IE Mobile (11)' !== result.featureData.missing) {
               let test = new Object(result);
                 test.status = false;
