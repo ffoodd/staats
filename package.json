@@ -26,7 +26,7 @@
   "author": {
     "name": "Gaël Poupard",
     "url": "https://www.ffoodd.fr",
-    "email": "gael@ffoodd.fr"
+    "email": "gael+staats@ffoodd.fr"
   },
   "license": "MIT",
   "bugs": {
@@ -35,23 +35,21 @@
   "homepage": "https://github.com/ffoodd/staats#readme",
   "dependencies": {
     "a11y": "^0.5.0",
+    "chalk": "^2.3.2",
+    "cheerio": "^1.0.0-rc.2",
+    "doiuse": "^4.1.0",
     "dom-stats": "^2.0.0",
     "html-validator": "^2.0.4",
     "is-blank": "^2.1.0",
+    "log-symbols": "^2.2.0",
     "meow": "^4.0.0",
     "normalize-url": "^2.0.1",
     "psi": "^3.1.0",
     "request": "^2.78.0",
+    "request-promise-native": "^1.0.5",
     "seo-checker": "^0.3.2",
     "shtml": "^0.1.0",
-    "stylestats": "^7.0.1"
-  },
-  "devDependencies": {
-    "chalk": "^2.3.2",
-    "cheerio": "^1.0.0-rc.2",
-    "doiuse": "^4.1.0",
-    "log-symbols": "^2.2.0",
-    "request-promise-native": "^1.0.5",
+    "stylestats": "^7.0.1",
     "w3c-css": "^2.0.1"
   }
 }
