@@ -8,6 +8,7 @@ const html    = require('html-validator')
 const css     = require('w3c-css')
 const styles  = require('stylestats')
 const seo     = require('seo-checker')
+const compat  = require('compat-tester')
 const req     = require('request')
 const request = require('request-promise-native')
 const dom     = require('dom-stats')
@@ -159,6 +160,8 @@ module.exports = (url) => {
           displayTest(test)
         }
       }
+
+      //let report = compat.htmlStringAnalyzer(data, {"ie":"8", "firefox":"57"}, console.log, {});
     })
     .catch((error) => console.error(error));
 
