@@ -8,7 +8,6 @@ const html    = require('html-validator')
 const css     = require('w3c-css')
 const styles  = require('stylestats')
 const seo     = require('seo-checker')
-const compat  = require('doiuse/stream')
 const req     = require('request')
 const request = require('request-promise-native')
 const dom     = require('dom-stats')
@@ -161,33 +160,6 @@ module.exports = (url) => {
           displayTest(test)
         }
       }
-
-      /*displayTitle('CSS browser compat')
-
-      let $ = cheerio.load(data);
-      let CSSFiles = $('link[rel="stylesheet"]').map(function(i) {
-        req($(this).attr('href'))
-          .on('error', function(error) {
-            console.error(error)
-          })
-          .pipe(compat(['last 1 versions', 'not dead', 'not op_mini']))
-          .on('data', function(result) {
-            // Condition shouldn't exist
-            // @link https://github.com/anandthakker/doiuse/issues/89
-            if(undefined !== result.featureData.missing
-              && 'Opera Mini (all)' !== result.featureData.missing
-              && 'Opera Mini (all), Opera Mobile (12.1)' !== result.featureData.missing
-              && 'IE (11), Opera Mini (all), Opera Mobile (12.1)' !== result.featureData.missing
-              && 'Opera Mini (all), Opera Mobile (12.1), IE Mobile (11)' !== result.featureData.missing) {
-              let test = new Object(result);
-                test.status = false;
-                test.name   = result.featureData.title;
-                test.value  = `not supported by ${result.featureData.missing}`;
-
-                displayTest(test)
-            }
-          });
-      });*/
     })
     .catch((error) => console.error(error));
 
