@@ -144,7 +144,7 @@ module.exports = (url) => {
         displayTest(test)
       }
       
-      displayTitle('CSS browser compat')
+      /*displayTitle('CSS browser compat')
 
       let $ = cheerio.load(data);
       let CSSFiles = $('link[rel="stylesheet"]').map(function(i) {
@@ -169,7 +169,7 @@ module.exports = (url) => {
                 displayTest(test)
             }
           });
-      });
+      });*/
     })
     .catch((error) => console.error(error));
     
