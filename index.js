@@ -11,7 +11,6 @@ const seo     = require('seo-checker')
 const req     = require('request')
 const request = require('request-promise-native')
 const dom     = require('dom-stats')
-const cheerio = require('cheerio')
 const symbols = require('log-symbols')
 const chalk   = require('chalk')
 
