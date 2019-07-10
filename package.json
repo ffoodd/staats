@@ -11,6 +11,9 @@
     "index.js",
     "cli.js"
   ],
+  "scripts": {
+    "start": "node cli.js"
+  },
   "bin": {
     "staats": "cli.js"
   },
