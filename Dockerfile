@@ -5,4 +5,5 @@ WORKDIR /app
 
 RUN npm install
 
-ENTRYPOINT ["npm", "run", "start"]
+ENTRYPOINT ["node", "cli.js"]
+CMD ["--help"]
